@@ -17,12 +17,22 @@ public class Tutorial : MonoBehaviour
     [SerializeField]float speedText = 0.05f;
     Coroutine lastRoutine = null;
 
+    Transition transition;
+
     void Start () {
         Init();
 	}
 
     void Init()
     {
+        transition = FindObjectOfType<Transition>();
+
+        Info.Instance.deletePlayerAndProgress();
+        if(Info.Instance.isGameSaved())
+        {
+            transition.LoadNextScene();
+        }
+
         dotBtn[0].interactable = false;
         for(int i = 0; i < dotBtn.Length; i++)
         {

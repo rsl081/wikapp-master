@@ -51,5 +51,8 @@ public class ChickScript : MonoBehaviour
         MoveOwl(xPos);
     }
 
+    private void OnDestroy() {
+        DOTween.KillAll();
+    }
 
 }
