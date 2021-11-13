@@ -6,18 +6,22 @@ using UnityEngine.UI;
 public class LevelSelection : MonoBehaviour
 {
     public bool isUnlocked = false;
-    public Image lockImage;//LOCK IMAGE
+    //public Image lockImage;//LOCK IMAGE
     public Image[] starsImages;//THREE STAR IMAGE
     public Sprite[] starsSprites;
-    public GameObject selectionPanel;
+    public GameObject wholeBackground;
 
     Transition transition;
+    FluidUI fluidUI;
+
+    [SerializeField] string _animateStr;
 
     private void Start()
     {
         transition = FindObjectOfType<Transition>();
+        fluidUI = FindObjectOfType<FluidUI>();
 
-        UpdateLevelButton();
+        //UpdateLevelButton();
         
         EventCenter.GetInstance().AddEventListener("PressStarButton", UnlockLevel);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateLevelButton);
@@ -42,7 +46,7 @@ public class LevelSelection : MonoBehaviour
     {
         if(isUnlocked)//MARKER We can play this level
         {
-            lockImage.gameObject.SetActive(false);//we dont want to see the lock image
+            //lockImage.gameObject.SetActive(false);//we dont want to see the lock image
             for(int i = 0; i < starsImages.Length; i++)
             {
                 starsImages[i].gameObject.SetActive(true);
@@ -55,7 +59,7 @@ public class LevelSelection : MonoBehaviour
         }
         else
         {
-            lockImage.gameObject.SetActive(true);
+            //lockImage.gameObject.SetActive(true);
             for (int i = 0; i < starsImages.Length; i++)
             {
                 starsImages[i].gameObject.SetActive(false);
@@ -65,12 +69,14 @@ public class LevelSelection : MonoBehaviour
 
     public void SceneTransition(string _sceneName)
     {
-        selectionPanel.SetActive(false);
+
+        fluidUI.AnimateUIBtn(_animateStr);
+
         if(isUnlocked)
         {
             transition.sceneName = _sceneName;
             transition.StringSceneToLoad();
-            //SceneManager.LoadScene(_sceneName);
+        
         }
     }
 

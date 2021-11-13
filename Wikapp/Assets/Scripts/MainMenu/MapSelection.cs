@@ -41,7 +41,7 @@ public class MapSelection : MonoBehaviour
 
     private void UnlockMap()//If our current candies number is great than the request number which means we can unlock the next map 
     {
-        if (UIManager.Instance.candies >= questNum)
+        if (UIManager.instance.candies >= questNum)
         {
             isUnlock = true;
         }
