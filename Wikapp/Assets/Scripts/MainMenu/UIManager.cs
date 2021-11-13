@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
-public class UIManager : Singleton<UIManager>
+public class UIManager : MonoBehaviour
 {
-    
+    public static UIManager instance;
     public GameObject mapSelectionPanel;
     public GameObject[] levelSelectionPanels;
 
@@ -31,9 +32,19 @@ public class UIManager : Singleton<UIManager>
     Transition transition;
     FluidUI fluidUI;
 
-    protected override void Awake()
-    {
-        base.Awake();
+    private void Awake() {
+        if(instance == null)
+        {
+            instance = this; 
+        }
+        else
+        {
+            if(instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+        DontDestroyOnLoad(gameObject);
         AnimatePanels();
     }
 
@@ -181,9 +192,10 @@ public class UIManager : Singleton<UIManager>
         string gameObjectName = mapSelections[_mapIndex].gameObject.name;
         if(mapSelections[_mapIndex].isUnlock == true)//You can open this level panel
         {
+            fluidUI.AnimateUIBtn(gameObjectName);
+
             // levelSelectionPanels[_mapIndex].gameObject.SetActive(true);
             // mapSelectionPanel.gameObject.SetActive(false);
-            fluidUI.AnimateUIBtn(gameObjectName);
         }
         else
         {
@@ -211,7 +223,18 @@ public class UIManager : Singleton<UIManager>
             levelSelectionPanels[i].gameObject.SetActive(false);
         }
         transition.StringSceneToLoad();
-        //SceneManager.LoadScene("LevelSelection");
+        //SceneManager.LoadScene("MainMenu");
+    }
+    public void BackToMainMenu()
+    {
+        mapSelectionPanel.gameObject.SetActive(true);
+        for (int i = 0; i < mapSelections.Length; i++)
+        {
+            levelSelectionPanels[i].gameObject.SetActive(true);
+        }
+        
+        SceneManager.LoadScene("MainMenu");
+        fluidUI.AnimateUIBtn("BackToMain");
     }
 
     public void Cheat(){
