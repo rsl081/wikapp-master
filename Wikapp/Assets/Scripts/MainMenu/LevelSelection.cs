@@ -6,11 +6,8 @@ using UnityEngine.UI;
 public class LevelSelection : MonoBehaviour
 {
     public bool isUnlocked = false;
-    //public Image lockImage;//LOCK IMAGE
     public Image[] starsImages;//THREE STAR IMAGE
     public Sprite[] starsSprites;
-    public GameObject wholeBackground;
-
     Transition transition;
     FluidUI fluidUI;
 
