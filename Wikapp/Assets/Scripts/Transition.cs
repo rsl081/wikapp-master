@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Transition : MonoBehaviour
 {
     public float timeToWait = 3f;
-    [SerializeField] string sceneName;
+    public string sceneName;
     [SerializeField] bool isLoadAutoStart = true;
     int currentSceneIndex;
     void Start()
