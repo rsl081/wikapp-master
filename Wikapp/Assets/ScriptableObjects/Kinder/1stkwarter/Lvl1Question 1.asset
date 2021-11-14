@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f51589730c8f5f49b2e9495400cf18d, type: 3}
-  m_Name: Lvl24Question 3
+  m_Name: Lvl1Question 1
   m_EditorClassIdentifier: 
-  question: {fileID: 21300000, guid: 97476bf41cb1dd743821654017bdfe24, type: 3}
+  question: {fileID: 21300000, guid: 71fcf4349856d4445b7fafacdb5e397b, type: 3}
   answer:
-  - Bomb
-  - Rock
-  - Paper
-  correctAnswerIndex: 3
+  - Pusa
+  - Aso
+  - Sisiw
+  correctAnswerIndex: 0

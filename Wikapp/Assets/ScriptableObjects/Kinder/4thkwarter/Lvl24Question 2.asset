@@ -17,4 +17,4 @@ MonoBehaviour:
   - Bomb
   - Rock
   - Paper
-  correctAnswerIndex: 0
+  correctAnswerIndex: 1

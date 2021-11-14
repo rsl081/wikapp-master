@@ -30,7 +30,7 @@ public class EndScreen : MonoBehaviour
 
     public void ShowFinalScore()
     {
-        finalScoreText.text = "Congrast!\nYOu got a score of"
+        finalScoreText.text = "You got a score\nof "
             + scoreKeeper.CalculateScore() + "%";
     }
 
