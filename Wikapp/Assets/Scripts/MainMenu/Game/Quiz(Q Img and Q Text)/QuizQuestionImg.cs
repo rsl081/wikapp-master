@@ -26,7 +26,7 @@ public class QuizQuestionImg : MonoBehaviour
     [Header ("ProgressBar")]
     [SerializeField] Slider progressBar;
     public bool isComplete;
-
+    int index = -1;
 
     void Awake()
     {
@@ -42,8 +42,6 @@ public class QuizQuestionImg : MonoBehaviour
         SetButtonState(false);
         GetNextQuestion();
 
-     
-        
     }
 
     void DisplayAnswer(int index)
@@ -76,29 +74,35 @@ public class QuizQuestionImg : MonoBehaviour
     {
         if(questions.Count > 0){
             SetButtonState(true);
-            SetDefaultButtonSprite();
-            GetRandomQuestion();
+            //SetDefaultButtonSprite();
+            //GetRandomQuestion();
             DisplayQuestion();
+            
             progressBar.value++;
             scoreKeeper.IncrementQuesitonsSeen();
         }
     }
 
-    void GetRandomQuestion()
-    {
-        int index = Random.Range(0, questions.Count);
-        currentQuestion = questions[index];
+    // void GetRandomQuestion()
+    // {
+    //     int index = Random.Range(0, questions.Count);
+    //     currentQuestion = questions[index];
 
-        if(questions.Contains(currentQuestion)){
-            questions.Remove(currentQuestion);
-        }
+    //     if(questions.Contains(currentQuestion)){
+    //         questions.Remove(currentQuestion);
+    //     }
 
-    }
-
+    // }
+    
     void DisplayQuestion()
     {
+        if(index < questions.Count-1){
+            index++;
+        }else{
+            return;
+        }
         if(questions.Count > 0){
-            int index = Random.Range(0, questions.Count);
+            //int index = Random.Range(0, questions.Count);
             currentQuestion = questions[index];
 
             questionImage.sprite = currentQuestion.GetQuestion();
@@ -121,15 +125,15 @@ public class QuizQuestionImg : MonoBehaviour
         }
     }
 
-    void SetDefaultButtonSprite()
-    {
-        Image buttonImage;
-        for(int i = 0; i < answerButton.Length; i++){
+    // void SetDefaultButtonSprite()
+    // {
+    //     Image buttonImage;
+    //     for(int i = 0; i < answerButton.Length; i++){
 
-            buttonImage = answerButton[correctAnswerIndex].GetComponent<Image>();
-            buttonImage.sprite = defaultAnswerSprite;
+    //         buttonImage = answerButton[correctAnswerIndex].GetComponent<Image>();
+    //         buttonImage.sprite = defaultAnswerSprite;
         
-        }
-    }
+    //     }
+    // }
 
 }
