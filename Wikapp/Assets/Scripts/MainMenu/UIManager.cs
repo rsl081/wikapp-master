@@ -51,8 +51,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        Info.Instance.deletePlayerAndProgress();
-        //PlayerPrefs.DeleteAll();
+        //Info.Instance.deletePlayerAndProgress();
 
         init();
     }

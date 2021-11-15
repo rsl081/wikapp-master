@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-[CreateAssetMenu (menuName = "QuesitonImg", fileName ="Question 1")]
-public class QuestionImgSO : ScriptableObject
+[CreateAssetMenu (menuName = "QuesitonTextSO", fileName ="Question 1")]
+public class QuestionTextSO : ScriptableObject
 {
-    [SerializeField] Sprite question;
+    [SerializeField] string question;
     [SerializeField] string[] answer = new string[3];
     [SerializeField] int correctAnswerIndex;
 
-    public Sprite GetQuestion()
+    public string GetQuestion()
     {
         return question;
     }
