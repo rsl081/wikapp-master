@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     SingleLevel singleLevel;
     Transition transition;
     private void Awake() {
+        
         singleLevel = FindObjectOfType<SingleLevel>();
         quiz = FindObjectOfType<QuizQuestionImg>();
         endScreen = FindObjectOfType<EndScreen>();
@@ -54,3 +55,5 @@ public class GameManager : MonoBehaviour
         transition.LoadNextScene();
     }
 }
+
+

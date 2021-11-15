@@ -11,26 +11,18 @@ public class EndScreen : MonoBehaviour
     public Image[] starsImages;//THREE STAR IMAGE
     public Sprite[] starsSprites;
     ScoreKeeper scoreKeeper;
-    SingleLevel singleLevel;
     public int levelIndex;
     Transition transition;
     // Start is called before the first frame update
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        singleLevel = FindObjectOfType<SingleLevel>();
         transition = FindObjectOfType<Transition>();
-
-        // starsImages[0].gameObject.SetActive(true);
-        // starsImages[0].sprite = starsSprites[0];
-
-        
-
     }
 
     public void ShowFinalScore()
     {
-        finalScoreText.text = "You got a score\nof "
+        finalScoreText.text = "You got a\n score of "
             + scoreKeeper.CalculateScore() + "%";
     }
 

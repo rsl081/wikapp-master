@@ -33,7 +33,3 @@ public class ScoreKeeper : MonoBehaviour
     }
 }
 
-class MyQuiz<T>
-{
-    public T theQuiz { get; set; }
-}
