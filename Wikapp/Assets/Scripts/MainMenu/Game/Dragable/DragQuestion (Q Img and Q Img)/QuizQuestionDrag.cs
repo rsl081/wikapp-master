@@ -30,12 +30,15 @@ public class QuizQuestionDrag : MonoBehaviour
     public bool isComplete;
     int index = -1;
 
+    RectTransform zen;
+
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
         DisplayQuestion();
+
     }
 
     public void OnAnswerSelected(int index)
@@ -100,10 +103,7 @@ public class QuizQuestionDrag : MonoBehaviour
 
             for(int i = 0; i < answerImg.Length; i++){
                 Image btnText = answerImg[i].GetComponentInChildren<Image>();
-                if(Vector2.Distance(btnText.gameObject.transform.position, backToSamePosition[i].position) < 3){
-
-                }
-                
+     
                 btnText.gameObject.transform.position = backToSamePosition[i].position;
                 btnText.sprite = currentQuestion.GetAnswer(i);
             }

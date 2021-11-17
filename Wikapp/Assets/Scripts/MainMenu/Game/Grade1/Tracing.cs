@@ -6,10 +6,9 @@ using UnityEngine.UI;
 
 public class Tracing : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    public Image traceImge;
-    float amountToAdd = 0.02f;
+    Image traceImge;
+    [SerializeField]float amountToAdd = 0.02f;
     [SerializeField] int howFar = 6;
-    [SerializeField] private float dampingSpeed = 0.05f; //The closer to zero the faster it goes
     private RectTransform draggingObject;
     private Vector3 velocity = Vector3.zero;
     bool isEndDragEnd = true;
@@ -46,19 +45,20 @@ public class Tracing : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     public void OnEndDrag(PointerEventData eventData)
     {
    
-        if(traceImge.fillAmount == 1 && isEndDragEnd)
+        if((traceImge.fillAmount == 1 && isEndDragEnd) || (traceImge.fillAmount >= 0.89 && isEndDragEnd))
         {
+            traceImge.raycastTarget = false;
             FindObjectOfType<QuizNumberTracing>().numberOfCorrectTrace++;
 
             if(FindObjectOfType<QuizNumberTracing>().numberOfCorrectTrace ==
                 FindObjectOfType<QuizNumberTracing>().lenOfTracing-1){
 
                 FindObjectOfType<QuizNumberTracing>().OnAnswerSelected();
-                
+       
+                isEndDragEnd = false;
             }
-            isEndDragEnd = false;
         }
         
-        //traceIamge.fillAmount += amountToAdd;
+
     }
 }

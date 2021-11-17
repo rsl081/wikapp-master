@@ -415,8 +415,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionImage: {fileID: 1628405680}
   questions:
-  - {fileID: 11400000, guid: 73d1b41679f6d0a43bf569528632023d, type: 2}
-  - {fileID: 11400000, guid: 51b3382e5cfa77a49b6247932a79e228, type: 2}
+  - {fileID: 11400000, guid: 39517259cf6c129448cf658f9c9899e6, type: 2}
+  - {fileID: 11400000, guid: 512fe4d6242fcc543af04ef49ed9d066, type: 2}
+  - {fileID: 11400000, guid: 9ece454d3dd183e4da8c86bea5e44f36, type: 2}
+  - {fileID: 11400000, guid: 5e4a191c9dcece644a193827baeea626, type: 2}
+  - {fileID: 11400000, guid: 723a1326059d443479919be4cdb3fc3e, type: 2}
   progressBar: {fileID: 1977232825}
   isComplete: 0
   lenOfTracing: 0
@@ -600,7 +603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628405681}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Number Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,7 +626,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 241, y: 335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1687561395
 GameObject:

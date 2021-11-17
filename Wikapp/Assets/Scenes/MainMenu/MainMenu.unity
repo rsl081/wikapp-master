@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 89927687}
   - component: {fileID: 89927686}
   m_Layer: 5
-  m_Name: 3 (3)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 18dce4bf97bdc6c49819515a0b6b6070, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 131731956}
   - component: {fileID: 131731955}
   m_Layer: 5
-  m_Name: 3 (15)
+  m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3730,7 +3730,7 @@ GameObject:
   - component: {fileID: 279266397}
   - component: {fileID: 279266396}
   m_Layer: 5
-  m_Name: 3 (16)
+  m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4000,7 +4000,7 @@ GameObject:
   - component: {fileID: 302025649}
   - component: {fileID: 302025648}
   m_Layer: 5
-  m_Name: 3 (10)
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4226,7 +4226,7 @@ GameObject:
   - component: {fileID: 306042606}
   - component: {fileID: 306042605}
   m_Layer: 5
-  m_Name: 3 (13)
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4778,7 +4778,7 @@ GameObject:
   - component: {fileID: 356508492}
   - component: {fileID: 356508491}
   m_Layer: 5
-  m_Name: 3 (18)
+  m_Name: 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8425,8 +8425,9 @@ GameObject:
   - component: {fileID: 686254874}
   - component: {fileID: 686254873}
   - component: {fileID: 686254872}
+  - component: {fileID: 686254875}
   m_Layer: 5
-  m_Name: 3 (2)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8497,7 +8498,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 686254873}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 686254875}
+        m_MethodName: SceneTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level5
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &686254873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8535,6 +8547,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686254870}
   m_CullTransparentMesh: 0
+--- !u!114 &686254875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686254870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 609084570}
+  - {fileID: 1976107880}
+  - {fileID: 1936089469}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  _animateStr: KndrGameToHome
 --- !u!1 &722673868
 GameObject:
   m_ObjectHideFlags: 0
@@ -10050,7 +10084,7 @@ GameObject:
   - component: {fileID: 841316850}
   - component: {fileID: 841316849}
   m_Layer: 5
-  m_Name: 3 (11)
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10454,7 +10488,7 @@ GameObject:
   - component: {fileID: 858878230}
   - component: {fileID: 858878229}
   m_Layer: 5
-  m_Name: 3 (9)
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12747,7 +12781,7 @@ GameObject:
   - component: {fileID: 1009655055}
   - component: {fileID: 1009655054}
   m_Layer: 5
-  m_Name: 3 (14)
+  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12869,7 +12903,7 @@ GameObject:
   - component: {fileID: 1029528001}
   - component: {fileID: 1029528000}
   m_Layer: 5
-  m_Name: 3 (19)
+  m_Name: 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13483,7 +13517,7 @@ GameObject:
   - component: {fileID: 1071961755}
   - component: {fileID: 1071961754}
   m_Layer: 5
-  m_Name: 3 (7)
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14391,7 +14425,7 @@ GameObject:
   - component: {fileID: 1112140005}
   - component: {fileID: 1112140004}
   m_Layer: 5
-  m_Name: 3 (12)
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16819,7 +16853,7 @@ GameObject:
   - component: {fileID: 1260423909}
   - component: {fileID: 1260423908}
   m_Layer: 5
-  m_Name: 3 (8)
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17735,7 +17769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 411ee48585afb044596f8d0dfd8a42fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18150,7 +18184,7 @@ GameObject:
   - component: {fileID: 1342305254}
   - component: {fileID: 1342305253}
   m_Layer: 5
-  m_Name: 3 (20)
+  m_Name: 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18389,7 +18423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c719d2b6b064f414aa661207c9c521eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20524,8 +20558,9 @@ GameObject:
   - component: {fileID: 1513950097}
   - component: {fileID: 1513950096}
   - component: {fileID: 1513950095}
+  - component: {fileID: 1513950098}
   m_Layer: 5
-  m_Name: 3 (1)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20596,7 +20631,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1513950096}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513950098}
+        m_MethodName: SceneTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1513950096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20634,6 +20680,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513950093}
   m_CullTransparentMesh: 0
+--- !u!114 &1513950098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513950093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1061999583}
+  - {fileID: 865008101}
+  - {fileID: 1786461583}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  _animateStr: KndrGameToHome
 --- !u!1 &1523619839
 GameObject:
   m_ObjectHideFlags: 0
@@ -21031,7 +21099,7 @@ GameObject:
   - component: {fileID: 1536162497}
   - component: {fileID: 1536162496}
   m_Layer: 5
-  m_Name: 3 (5)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21515,7 +21583,7 @@ GameObject:
   - component: {fileID: 1593538748}
   - component: {fileID: 1593538747}
   m_Layer: 5
-  m_Name: 3 (4)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21637,7 +21705,7 @@ GameObject:
   - component: {fileID: 1598538003}
   - component: {fileID: 1598538002}
   m_Layer: 5
-  m_Name: 3 (6)
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22530,7 +22598,7 @@ GameObject:
   - component: {fileID: 1714637440}
   - component: {fileID: 1714637439}
   m_Layer: 5
-  m_Name: 3 (17)
+  m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25899,7 +25967,7 @@ GameObject:
   - component: {fileID: 1925249205}
   - component: {fileID: 1925249204}
   m_Layer: 5
-  m_Name: 3 (21)
+  m_Name: 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28558,7 +28626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9e1776026c976db43aa120d7c3fe22c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8085626a7c152944e9689a2cf925856a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
