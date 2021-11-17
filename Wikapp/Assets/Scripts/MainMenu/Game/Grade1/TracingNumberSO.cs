@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu (menuName = "QuesitonTracingNumber", fileName ="Question 1")]
+[CreateAssetMenu (menuName = "QuesitonTracingNumber", fileName ="Tracing Question 1")]
 public class TracingNumberSO : ScriptableObject
 {
     [SerializeField] GameObject question;
@@ -12,16 +12,5 @@ public class TracingNumberSO : ScriptableObject
     {
         return question;
     }
-    // public bool GetCorrectAnswerBool()
-    // {
-    //     return correctAnswer;
-    // }
-    // public string GetAnswer(int index)
-    // {
-    //     return answer[index];
-    // }
-    // public void SetAnswer(int index, string answer)
-    // {
-    //     this.answer[index] = answer;
-    // }
+
 }

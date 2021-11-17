@@ -36,6 +36,7 @@ public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
             for(int i = 0; i < quizQuestionDrag.answerImg.Length; i++){
                 Image btnText = quizQuestionDrag.answerImg[i].GetComponentInChildren<Image>();
                 if(Vector2.Distance(btnText.gameObject.transform.position, quizQuestionDrag.questionImage.transform.position) < 1.5f){
+                    
                     btnText.gameObject.transform.position = quizQuestionDrag.questionImage.transform.position;
                     startDragging = false;
                     Invoke(nameof(GoForAnswer), .5f);

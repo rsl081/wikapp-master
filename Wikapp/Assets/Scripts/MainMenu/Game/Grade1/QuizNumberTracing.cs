@@ -32,13 +32,15 @@ public class QuizNumberTracing : MonoBehaviour
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
         DisplayQuestion();
-        lenOfTracing = currentQuestion.GetQuestion().GetComponentsInChildren<Image>().Length;
+       
 
     }
 
 
+
     public void OnAnswerSelected()
     {
+        
         DisplayAnswer();
         GetNextQuestion();
 
@@ -47,6 +49,7 @@ public class QuizNumberTracing : MonoBehaviour
     public void DisplayAnswer()
     {
         if(progressBar.value == progressBar.maxValue){
+            scoreKeeper.IncrementCorrectAnswer();
             isComplete = true;
             ShowCompletion();
         }
@@ -87,13 +90,10 @@ public class QuizNumberTracing : MonoBehaviour
             letter = Instantiate(currentQuestion.GetQuestion(), questionImage.transform.position,
                     Quaternion.identity) as GameObject;
             letter.transform.SetParent(GameObject.FindGameObjectWithTag("QuizCanvas").transform, false);
-            
-            
-            
-            //questionImage = currentQuestion.GetQuestion();
 
-
+            numberOfCorrectTrace = 0;
         }
+        lenOfTracing = currentQuestion.GetQuestion().GetComponentsInChildren<Image>().Length;
         
     }
 
