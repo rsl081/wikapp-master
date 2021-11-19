@@ -9,6 +9,7 @@ using TMPro;
 public class QuizQuestionDrag : MonoBehaviour
 {
     [Header("Questions")]
+    [SerializeField] Image questionImageHolder;
     [SerializeField] public Image questionImage;
     [SerializeField] List<QuizImgDragSO> questions = new List<QuizImgDragSO>();    
     QuizImgDragSO currentQuestion;
@@ -28,6 +29,7 @@ public class QuizQuestionDrag : MonoBehaviour
     [Header ("ProgressBar")]
     [SerializeField] Slider progressBar;
     public bool isComplete;
+    [SerializeField] bool isHoldingSomething;
     int index = -1;
 
     RectTransform zen;
@@ -100,6 +102,10 @@ public class QuizQuestionDrag : MonoBehaviour
             currentQuestion = questions[index];
 
             questionImage.sprite = currentQuestion.GetQuestion();
+            if(isHoldingSomething)
+            {
+                questionImageHolder.sprite = currentQuestion.GetQuestionHolder();
+            }
 
             for(int i = 0; i < answerImg.Length; i++){
                 Image btnText = answerImg[i].GetComponentInChildren<Image>();

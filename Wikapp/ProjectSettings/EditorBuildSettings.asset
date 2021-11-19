@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu/Kinder/Level6.unity
     guid: 672cda2903f3dbe4386371b865730ce5
   - enabled: 1
+    path: Assets/Scenes/MainMenu/Kinder/Level7.unity
+    guid: aad805ec006eabc43b3e2f502929186e
+  - enabled: 1
     path: Assets/Scenes/MainMenu/Grade1/Level25.unity
     guid: 4f37ef6cbfcd0fe4db274057435726cc
   m_configObjects: {}
