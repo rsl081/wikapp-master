@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724b75daf3c567a468c341d2e8ff1a64, type: 3}
+  m_Name: Lvl7 Questoin 2
+  m_EditorClassIdentifier: 
+  question: {fileID: 21300000, guid: 295bd0603950ec042a888a2f050a4db4, type: 3}
+  questionWithHolder: {fileID: 21300000, guid: d8488737aad9e58459522b933481f7f5, type: 3}
+  answer:
+  - {fileID: 21300000, guid: a00aa0ec76298ea409851dffb9e54ce9, type: 3}
+  - {fileID: 21300000, guid: 1f11d68a4a6471d4d8bb423c6cae880c, type: 3}
+  - {fileID: 21300000, guid: 295bd0603950ec042a888a2f050a4db4, type: 3}
+  correctAnswerIndex: 2

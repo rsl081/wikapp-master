@@ -8,6 +8,7 @@ public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private bool startDragging = true;
     QuizQuestionDrag quizQuestionDrag;
+    [SerializeField] float distanceOfSnap = 1.5f;
     [SerializeField] private float dampingSpeed = 0.05f; //The closer to zero the faster it goes
     private RectTransform draggingObject;
     private Vector3 velocity = Vector3.zero;
@@ -35,7 +36,7 @@ public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
             answer = int.Parse(this.gameObject.name);
             for(int i = 0; i < quizQuestionDrag.answerImg.Length; i++){
                 Image btnText = quizQuestionDrag.answerImg[i].GetComponentInChildren<Image>();
-                if(Vector2.Distance(btnText.gameObject.transform.position, quizQuestionDrag.questionImage.transform.position) < 1.5f){
+                if(Vector2.Distance(btnText.gameObject.transform.position, quizQuestionDrag.questionImage.transform.position) < distanceOfSnap){
                     
                     btnText.gameObject.transform.position = quizQuestionDrag.questionImage.transform.position;
                     startDragging = false;

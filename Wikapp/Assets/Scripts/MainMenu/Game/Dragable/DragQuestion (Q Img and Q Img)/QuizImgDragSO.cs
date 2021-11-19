@@ -6,6 +6,7 @@ using UnityEngine;
 public class QuizImgDragSO : ScriptableObject
 {
     [SerializeField] Sprite question;
+    [SerializeField] Sprite questionWithHolder;
     [SerializeField] Sprite[] answer = new Sprite[3];
     [SerializeField] int correctAnswerIndex;
 
@@ -21,5 +22,9 @@ public class QuizImgDragSO : ScriptableObject
     public Sprite GetAnswer(int index)
     {
         return answer[index];
+    }
+    public Sprite GetQuestionHolder()
+    {
+        return questionWithHolder;
     }
 }
