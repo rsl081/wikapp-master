@@ -655,7 +655,7 @@ RectTransform:
   - {fileID: 414724415}
   - {fileID: 782774884}
   - {fileID: 999965095}
-  - {fileID: 821309352}
+  - {fileID: 718058012}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -978,8 +978,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Home Btn
       objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2136457599}
+    - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToHome
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 413edc74419daf244a532ac0834aaa42, type: 3}
+--- !u!224 &718058012 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
+    type: 3}
+  m_PrefabInstance: {fileID: 718058011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &782774883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,12 +1036,6 @@ RectTransform:
   m_AnchoredPosition: {x: -304, y: -583}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &821309352 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3244089571695582730, guid: 413edc74419daf244a532ac0834aaa42,
-    type: 3}
-  m_PrefabInstance: {fileID: 718058011}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &999965094 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6593337146498391789, guid: cc65a1a6c07d2b6458b7392b57a6fa60,

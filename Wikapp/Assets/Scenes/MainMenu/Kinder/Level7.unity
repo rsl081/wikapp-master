@@ -554,12 +554,6 @@ RectTransform:
   m_AnchoredPosition: {x: 94, y: -107}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &493251470 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3244089571695582730, guid: 413edc74419daf244a532ac0834aaa42,
-    type: 3}
-  m_PrefabInstance: {fileID: 1885386488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &617158672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1215,7 @@ RectTransform:
   - {fileID: 804458819}
   - {fileID: 416873307}
   - {fileID: 636550405}
-  - {fileID: 493251470}
+  - {fileID: 1885386489}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1860,5 +1854,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Home Btn
       objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1488315287}
+    - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToHome
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 413edc74419daf244a532ac0834aaa42, type: 3}
+--- !u!224 &1885386489 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
+    type: 3}
+  m_PrefabInstance: {fileID: 1885386488}
+  m_PrefabAsset: {fileID: 0}

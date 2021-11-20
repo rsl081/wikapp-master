@@ -6,7 +6,8 @@ using UnityEngine;
 public class QuestionImgSO : ScriptableObject
 {
     [SerializeField] Sprite question;
-    [SerializeField] string[] answer = new string[3];
+    //[SerializeField] string[] answer = new string[3];
+    [SerializeField] string[] answer;
     [SerializeField] int correctAnswerIndex;
 
     public Sprite GetQuestion()
