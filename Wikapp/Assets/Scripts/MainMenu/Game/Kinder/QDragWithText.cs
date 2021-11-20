@@ -1,22 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-//! Responsible for UI such as dragImg, text, and quesHolder.
-public class QuizQuestionDrag : MonoBehaviour
+public class QDragWithText : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] Image questionImageHolder;
     [SerializeField] public Image questionImage;
-    [SerializeField] List<QuizImgDragSO> questions = new List<QuizImgDragSO>();    
-    QuizImgDragSO currentQuestion;
+    [SerializeField] List<QDragWithTextSO> questions = new List<QDragWithTextSO>();    
+    QDragWithTextSO currentQuestion;
     [SerializeField] public Transform[] backToSamePosition;
 
     [Header("Answers")]
-    [SerializeField] public GameObject[] answerImg;
+    [SerializeField] public GameObject[] answerText;
     int correctAnswerIndex;
 
     [Header("Buttons Color")]
@@ -31,33 +29,39 @@ public class QuizQuestionDrag : MonoBehaviour
     public bool isComplete;
     [SerializeField] bool isHoldingSomething;
     int index = -1;
-
-
+    [Header ("Audio")]
+    AudioSource source;
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        source = FindObjectOfType<AudioSource>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
+       
         DisplayQuestion();
-
+        
     }
 
     public void OnAnswerSelected(int index)
     {
+        
         DisplayAnswer(index);
         //SetButtonState(false);
         GetNextQuestion();
+     
 
     }
 
     void DisplayAnswer(int index)
     {
         //Image buttonImage;
+        
         if(index == currentQuestion.GetCorrectAnswerIndex()){
             //questionImage.sprite = questionSO.GetQuestion();
             //Coorect Message 
             // buttonImage = answerButton[index].GetComponent<Image>();
             // buttonImage.sprite = correctAnswerSprite;
+           
             scoreKeeper.IncrementCorrectAnswer();
         }else{
 
@@ -106,16 +110,27 @@ public class QuizQuestionDrag : MonoBehaviour
                 questionImageHolder.sprite = currentQuestion.GetQuestionHolder();
             }
 
-            for(int i = 0; i < answerImg.Length; i++){
-                Image btnText = answerImg[i].GetComponentInChildren<Image>();
-     
-                btnText.gameObject.transform.position = backToSamePosition[i].position;
-                btnText.sprite = currentQuestion.GetAnswer(i);
+            for(int i = 0; i < answerText.Length; i++){
+                TextMeshProUGUI btnText = answerText[i].GetComponentInChildren<TextMeshProUGUI>();
+                Image imgBtn = answerText[i].GetComponentInChildren<Image>();
+                
+                imgBtn.gameObject.transform.position = backToSamePosition[i].position;
+                btnText.text = currentQuestion.GetAnswer(i);
             }
         }
         
     }
 
+    public void PlaySound(int _index)
+    {
+        source.clip = currentQuestion.GetSourceAudio()[_index];
+        source.Play(0);
+    }
+    public void PauseSound(int _index)
+    {
+        source.clip = currentQuestion.GetSourceAudio()[_index];
+        source.Pause();
+    }
 
     // void SetButtonState(bool state)
     // {
