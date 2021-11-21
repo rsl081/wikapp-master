@@ -436,6 +436,9 @@ MonoBehaviour:
   questionText: {fileID: 551453083}
   questions:
   - {fileID: 11400000, guid: 866b3c1783b0a274b9751ab151523a15, type: 2}
+  - {fileID: 11400000, guid: 3a642bb963f17d64785aae1475f71ef7, type: 2}
+  - {fileID: 11400000, guid: 5370f8048082a7b4dbda9d8eac95c214, type: 2}
+  - {fileID: 11400000, guid: 371899eb275721545909fb8953077e11, type: 2}
   answerButton:
   - {fileID: 6913167847144322306}
   - {fileID: 6913167847801120621}
@@ -917,12 +920,12 @@ PrefabInstance:
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -271.00003
+      value: -271
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160.00002
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}

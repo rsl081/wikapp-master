@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fe38efb7881147a93d3d62d18a25d, type: 3}
   m_Name: Lvl3Question 2
   m_EditorClassIdentifier: 
-  question: Ilan taon ka na?
+  question: Anong buwan ka ipinanganak?
   answer:
-  - 3
-  - 4
-  - 5
+  - 28
+  - 7
+  - 1
   correctAnswerIndex: 0
