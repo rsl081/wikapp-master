@@ -26,6 +26,7 @@ public class EdadGameManager : MonoBehaviour
     }
     private void OnDestroy()
     {
+        
         EventCenter.GetInstance().RemoveEventListener("UpdateScorePercent", UpdateScore);
         
     }

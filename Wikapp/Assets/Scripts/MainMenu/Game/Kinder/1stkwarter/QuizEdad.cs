@@ -28,6 +28,20 @@ public class QuizEdad : MonoBehaviour
     int index = -1;
 
     List<int> agesToChooseFrom = new List<int>(new int[]{3,4,5});
+
+    
+    List<string> monthsToChooseFrom = new List<string>(new string[]{
+        "March","April","May"
+        });
+
+    //Todo make this year connected to the dropdown in InfGui
+    List<string> yearsToChooseFrom = new List<string>(new string[]{
+        "2016","2017","2019"});
+
+    List<int> daysToChooseFrom = new List<int>(new int[]{
+        28,7,1
+    });
+
     InfoGUI infoGUI;
     public Player currentPlayer = new Player();
 
@@ -38,11 +52,20 @@ public class QuizEdad : MonoBehaviour
         progressBar.value = 1;
 
         int agePlayer = int.Parse(Info.Instance.getPlayer()._age);
-        Debug.Log(agePlayer);
+
+        string monthPlayer = Info.Instance.getPlayer()._month;
+        int dayPlayer = Info.Instance.getPlayer()._day;
+        string yearPlayer = Info.Instance.getPlayer()._year;
+
         bool ageIsAlreadyExist = agesToChooseFrom.Contains(agePlayer);
+
+        bool monthIsAlreadyExist = monthsToChooseFrom.Contains(monthPlayer);
+        bool dayIsAlreadyExist = daysToChooseFrom.Contains(dayPlayer);
+        bool yearIsAlreadyExist = yearsToChooseFrom.Contains(yearPlayer);
 
         //if age is already exist
         if(ageIsAlreadyExist){
+
             agesToChooseFrom.Remove(agePlayer);
             //The data was remove, the list now became 2 digit  numbersToChooseFrom [num1, num2]
             //This is the reason why I add two digits
@@ -50,17 +73,53 @@ public class QuizEdad : MonoBehaviour
 
         }else{
             agesToChooseFrom.Remove(3);
+
+
             agesToChooseFrom.Add(agePlayer);
+
+        }
+
+        if(monthIsAlreadyExist){
+
+            monthsToChooseFrom.Remove(monthPlayer);
+            monthsToChooseFrom.Add(monthPlayer);
+
+        }else{
+            monthsToChooseFrom.Remove("March");
+
+
+            monthsToChooseFrom.Add(monthPlayer);
+
+        }
+
+        if(dayIsAlreadyExist){
+
+            daysToChooseFrom.Remove(dayPlayer);
+            daysToChooseFrom.Add(dayPlayer);
+
+        }else{
+            daysToChooseFrom.Remove(28);
+
+
+            daysToChooseFrom.Add(dayPlayer);
+
+        }
+
+        if(yearIsAlreadyExist){
+
+            yearsToChooseFrom.Remove(yearPlayer);
+            yearsToChooseFrom.Add(yearPlayer);
+
+        }else{
+            yearsToChooseFrom.Remove("2016");
+
+            yearsToChooseFrom.Add(yearPlayer);
+
         }
 
         DisplayQuestion();
 
      
-    }
-
-    private void Start() {
-     
-        
     }
 
     public void OnAnswerSelected(int index)
@@ -73,12 +132,15 @@ public class QuizEdad : MonoBehaviour
 
     void DisplayAnswer(int index)
     {
-    
-        if(answerButton[index].GetComponentInChildren<TextMeshProUGUI>().text.Equals(Info.Instance.getPlayer()._age)){
+        if(answerButton[index].GetComponentInChildren<TextMeshProUGUI>().text.Equals(Info.Instance.getPlayer()._age) ||
+            answerButton[index].GetComponentInChildren<TextMeshProUGUI>().text.Equals(Info.Instance.getPlayer()._month) ||
+            answerButton[index].GetComponentInChildren<TextMeshProUGUI>().text.Equals(Info.Instance.getPlayer()._day.ToString()) ||
+            answerButton[index].GetComponentInChildren<TextMeshProUGUI>().text.Equals(Info.Instance.getPlayer()._year)){
             //questionImage.sprite = questionSO.GetQuestion();
             //Coorect Message 
             // buttonImage = answerButton[index].GetComponent<Image>();
             // buttonImage.sprite = correctAnswerSprite;
+        
             scoreKeeper.IncrementCorrectAnswer();
         }else{
 
@@ -120,16 +182,62 @@ public class QuizEdad : MonoBehaviour
         }
         if(questions.Count > 0){
             //int index = Random.Range(0, questions.Count);
-            currentQuestion = questions[index];
 
-            questionText.text = currentQuestion.GetQuestion();
+            if(index == 0)
+            {
+                currentQuestion = questions[index];
 
-            for(int i = 0; i < answerButton.Length; i++){
-                //int index = Random.Range(0, agesToChooseFrom.Count);
-                currentQuestion.SetAnswer(i, agesToChooseFrom[i].ToString());
-                TextMeshProUGUI btnText = answerButton[i].GetComponentInChildren<TextMeshProUGUI>();
-                btnText.text = currentQuestion.GetAnswer(i);
+                questionText.text = currentQuestion.GetQuestion();
+
+
+                for(int i = 0; i < answerButton.Length; i++){
+                    //int index = Random.Range(0, agesToChooseFrom.Count);
+                    currentQuestion.SetAnswer(i, agesToChooseFrom[i].ToString());
+                    TextMeshProUGUI btnText = answerButton[i].GetComponentInChildren<TextMeshProUGUI>();
+                    btnText.text = currentQuestion.GetAnswer(i);
+                }
+            }else if(index == 1)
+            {
+                currentQuestion = questions[index];
+
+                questionText.text = currentQuestion.GetQuestion();
+
+
+                for(int i = 0; i < answerButton.Length; i++){
+                    //int index = Random.Range(0, agesToChooseFrom.Count);
+                    currentQuestion.SetAnswer(i, monthsToChooseFrom[i].ToString());
+                    TextMeshProUGUI btnText = answerButton[i].GetComponentInChildren<TextMeshProUGUI>();
+                    btnText.text = currentQuestion.GetAnswer(i);
+                }
+            }else if(index == 2)
+            {
+                currentQuestion = questions[index];
+
+                questionText.text = currentQuestion.GetQuestion();
+
+
+                for(int i = 0; i < answerButton.Length; i++){
+                    //int index = Random.Range(0, agesToChooseFrom.Count);
+                    currentQuestion.SetAnswer(i, daysToChooseFrom[i].ToString());
+                    TextMeshProUGUI btnText = answerButton[i].GetComponentInChildren<TextMeshProUGUI>();
+                    btnText.text = currentQuestion.GetAnswer(i);
+                }
+            }else if(index == 3)
+            {
+                currentQuestion = questions[index];
+
+                questionText.text = currentQuestion.GetQuestion();
+
+
+                for(int i = 0; i < answerButton.Length; i++){
+                    //int index = Random.Range(0, agesToChooseFrom.Count);
+                    currentQuestion.SetAnswer(i, yearsToChooseFrom[i].ToString());
+                    TextMeshProUGUI btnText = answerButton[i].GetComponentInChildren<TextMeshProUGUI>();
+                    btnText.text = currentQuestion.GetAnswer(i);
+                }
             }
+
+
         }
         
     }
