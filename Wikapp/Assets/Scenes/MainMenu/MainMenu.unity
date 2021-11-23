@@ -8526,7 +8526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2061e3c372052994996a89b7f58944b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13209,6 +13209,7 @@ GameObject:
   - component: {fileID: 1029528002}
   - component: {fileID: 1029528001}
   - component: {fileID: 1029528000}
+  - component: {fileID: 1029528003}
   m_Layer: 5
   m_Name: 22
   m_TagString: Untagged
@@ -13281,7 +13282,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1029528001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1029528003}
+        m_MethodName: SceneTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level22
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1029528001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13319,6 +13331,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029527998}
   m_CullTransparentMesh: 0
+--- !u!114 &1029528003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029527998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 349161871}
+  - {fileID: 313044451}
+  - {fileID: 109647405}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  _animateStr: KndrGameToHome
 --- !u!1 &1037389441
 GameObject:
   m_ObjectHideFlags: 0
@@ -14367,7 +14401,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a1ffbefbad9d72a4eafa66fed68f7de1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18592,6 +18626,7 @@ GameObject:
   - component: {fileID: 1342305255}
   - component: {fileID: 1342305254}
   - component: {fileID: 1342305253}
+  - component: {fileID: 1342305256}
   m_Layer: 5
   m_Name: 23
   m_TagString: Untagged
@@ -18664,7 +18699,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1342305254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1342305256}
+        m_MethodName: SceneTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level23
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1342305254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18702,6 +18748,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342305251}
   m_CullTransparentMesh: 0
+--- !u!114 &1342305256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342305251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1589726141}
+  - {fileID: 1534380437}
+  - {fileID: 596078196}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  _animateStr: KndrGameToHome
 --- !u!1 &1348493325
 GameObject:
   m_ObjectHideFlags: 0

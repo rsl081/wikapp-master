@@ -14,16 +14,16 @@ public class PaintBucket : MonoBehaviour
 
     [SerializeField] Slider progressBar;
 
-    SpriteRenderer[] boyColoring;
-    SpriteRenderer[] girlColoring;
     ScoreKeeper scoreKeeper;
 
+    [SerializeField] int numbersOfFillWhite;
+
     private void Start() {
-        boyColoring = FindObjectOfType<BoyColoring>().GetComponentsInChildren<SpriteRenderer>();
-        girlColoring = FindObjectOfType<GirlColoring>().GetComponentsInChildren<SpriteRenderer>();
+        //boyColoring = FindObjectOfType<BoyColoring>().GetComponentsInChildren<SpriteRenderer>();
+        //girlColoring = FindObjectOfType<GirlColoring>().GetComponentsInChildren<SpriteRenderer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
 
-        progressBar.maxValue = (boyColoring.Length + girlColoring.Length) - 1;
+        progressBar.maxValue = numbersOfFillWhite;
         progressBar.value = 1;
 
     }
