@@ -5890,6 +5890,7 @@ MonoBehaviour:
   colorCount: 0
   isComplete: 0
   progressBar: {fileID: 204629114}
+  numbersOfFillWhite: 35
 --- !u!4 &1420836235
 Transform:
   m_ObjectHideFlags: 0
