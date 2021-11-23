@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 04d0f7147849a0a41bfdef0e2418d779, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26653,6 +26653,7 @@ GameObject:
   - component: {fileID: 1925249206}
   - component: {fileID: 1925249205}
   - component: {fileID: 1925249204}
+  - component: {fileID: 1925249207}
   m_Layer: 5
   m_Name: 24
   m_TagString: Untagged
@@ -26725,7 +26726,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1925249205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925249207}
+        m_MethodName: SceneTransition
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level24
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1925249205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26763,6 +26775,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925249202}
   m_CullTransparentMesh: 0
+--- !u!114 &1925249207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925249202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 646644396}
+  - {fileID: 1533815663}
+  - {fileID: 9311694}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  _animateStr: KndrGameToHome
 --- !u!1 &1936089467
 GameObject:
   m_ObjectHideFlags: 0
