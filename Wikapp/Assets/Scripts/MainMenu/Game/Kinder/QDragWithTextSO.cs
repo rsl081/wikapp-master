@@ -7,12 +7,18 @@ public class QDragWithTextSO : ScriptableObject
     [SerializeField] AudioClip[] source;
     [SerializeField] Sprite question;
     [SerializeField] Sprite questionWithHolder;
+    [SerializeField] string questionStr;
     [SerializeField] string[] answer = new string[3];
     [SerializeField] int correctAnswerIndex;
 
     public Sprite GetQuestion()
     {
         return question;
+    }
+
+    public string GetQuestionStr()
+    {
+        return questionStr;
     }
 
     public AudioClip[] GetSourceAudio()
