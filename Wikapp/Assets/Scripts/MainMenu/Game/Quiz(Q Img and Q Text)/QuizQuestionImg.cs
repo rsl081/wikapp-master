@@ -26,7 +26,6 @@ public class QuizQuestionImg : MonoBehaviour
     [SerializeField] Slider progressBar;
     public bool isComplete;
     int index = -1;
-
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();

@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI[] questStarsTexts;
     public TextMeshProUGUI[] lockedStarsTexts;
     public TextMeshProUGUI[] unlockStarsTexts;
+    [SerializeField] GameObject myCanvas;
     
 	private List<Sequence> animationSequences = new List<Sequence>();
 
@@ -226,6 +227,7 @@ public class UIManager : MonoBehaviour
     public void BackToMainMenu()
     {
         mapSelectionPanel.gameObject.SetActive(true);
+        myCanvas.SetActive(true);
         for (int i = 0; i < mapSelections.Length; i++)
         {
             levelSelectionPanels[i].gameObject.SetActive(true);
