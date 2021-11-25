@@ -9,6 +9,7 @@ public class QDragWithTextSO : ScriptableObject
     [SerializeField] Sprite questionWithHolder;
     [SerializeField] string questionStr;
     [SerializeField] string[] answer = new string[3];
+    [SerializeField] Sprite[] answerSprite = new Sprite[3];
     [SerializeField] int correctAnswerIndex;
 
     public Sprite GetQuestion()
@@ -33,6 +34,11 @@ public class QDragWithTextSO : ScriptableObject
     public string GetAnswer(int index)
     {
         return answer[index];
+    }
+
+    public Sprite GetAnswerImg(int index)
+    {
+        return answerSprite[index];
     }
     public Sprite GetQuestionHolder()
     {
