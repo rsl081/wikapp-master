@@ -10,7 +10,7 @@ public class LevelSelection : MonoBehaviour
     public Sprite[] starsSprites;
     Transition transition;
     FluidUI fluidUI;
-
+    [SerializeField] GameObject hideThisShit;
     [SerializeField] string _animateStr;
 
     private void Start()
@@ -71,10 +71,18 @@ public class LevelSelection : MonoBehaviour
 
         if(isUnlocked)
         {
-            transition.sceneName = _sceneName;
-            transition.StringSceneToLoad();
+            StartCoroutine(DelayTransistion(_sceneName));
         
         }
+    }
+
+    IEnumerator DelayTransistion(string _sceneName)
+    {
+        yield return new WaitForSeconds(0.05f);
+        hideThisShit.gameObject.SetActive(false);
+        // hideThisShit2.gameObject.SetActive(false);
+        transition.sceneName = _sceneName;
+        transition.StringSceneToLoad();
     }
 
 }

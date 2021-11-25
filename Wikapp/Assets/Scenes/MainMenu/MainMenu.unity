@@ -498,6 +498,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: G1GameToHome
 --- !u!1 &49304240
 GameObject:
@@ -1010,6 +1011,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &96893484
 GameObject:
@@ -1160,6 +1162,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &103162060
 GameObject:
@@ -2043,6 +2046,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &133981646
 GameObject:
@@ -2267,6 +2271,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &157077826
 GameObject:
@@ -3875,6 +3880,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &279266394
 GameObject:
@@ -4031,6 +4037,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &281483671
 GameObject:
@@ -4335,6 +4342,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &305991795
 GameObject:
@@ -4595,6 +4603,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &310491227
 GameObject:
@@ -5181,6 +5190,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!224 &372413923 stripped
 RectTransform:
@@ -6290,6 +6300,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &526955450
 GameObject:
@@ -6740,6 +6751,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &557408283
 GameObject:
@@ -7900,6 +7912,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &597076560
 GameObject:
@@ -8919,6 +8932,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &722673868
 GameObject:
@@ -10062,7 +10076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d80be2939509f2b4797d023c90e34b77, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10577,6 +10591,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &841761512
 GameObject:
@@ -11015,6 +11030,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1001 &858881483
 PrefabInstance:
@@ -12260,6 +12276,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &929873940
 GameObject:
@@ -13370,6 +13387,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1029527998
 GameObject:
@@ -13526,6 +13544,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1037389441
 GameObject:
@@ -13676,6 +13695,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1048638327
 GameObject:
@@ -14202,6 +14222,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1072385503
 GameObject:
@@ -14574,6 +14595,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1086306560
 GameObject:
@@ -15172,6 +15194,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1113311181
 GameObject:
@@ -15442,6 +15465,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1126671771
 GameObject:
@@ -15598,6 +15622,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: G1GameToHome
 --- !u!1 &1128070711
 GameObject:
@@ -15655,7 +15680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: febaf3b7c1efe644096ad07f177ede9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15896,6 +15921,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1151728966
 GameObject:
@@ -16789,6 +16815,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1228702625
 GameObject:
@@ -17516,6 +17543,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1256882788
 GameObject:
@@ -17746,6 +17774,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1269232437
 GameObject:
@@ -19111,6 +19140,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1348493325
 GameObject:
@@ -19483,6 +19513,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1376319021
 GameObject:
@@ -19762,7 +19793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ca831952a05201844ae0b26a1cd971ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20583,6 +20614,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1447511364
 GameObject:
@@ -21516,6 +21548,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1513950093
 GameObject:
@@ -21672,6 +21705,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1523619839
 GameObject:
@@ -22212,6 +22246,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1548076962
 GameObject:
@@ -22730,6 +22765,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1598538000
 GameObject:
@@ -22886,6 +22922,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1616235895
 GameObject:
@@ -23819,6 +23856,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1725344989
 GameObject:
@@ -23975,6 +24013,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1757784906
 GameObject:
@@ -24934,6 +24973,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1797971645
 GameObject:
@@ -25514,6 +25554,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1813517140
 GameObject:
@@ -25886,6 +25927,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1845397241
 GameObject:
@@ -26392,6 +26434,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1874947844
 GameObject:
@@ -26912,6 +26955,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &1910611014
 GameObject:
@@ -27207,6 +27251,7 @@ MonoBehaviour:
   - {fileID: 1797971647}
   - {fileID: 1230872052}
   - {fileID: 1845397243}
+  myCanvas: {fileID: 1919413551}
 --- !u!1 &1925249202
 GameObject:
   m_ObjectHideFlags: 0
@@ -27362,6 +27407,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: KndrGameToHome
 --- !u!1 &1936089467
 GameObject:
@@ -28016,6 +28062,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 1919413551}
   _animateStr: G1GameToHome
 --- !u!1 &1969988757
 GameObject:
@@ -29692,6 +29739,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &2114332747
 GameObject:
@@ -30216,6 +30264,7 @@ MonoBehaviour:
   isUnlocked: 0
   starsImages: []
   starsSprites: []
+  hideThisShit: {fileID: 1919413551}
   _animateStr: 
 --- !u!1 &2146670423
 GameObject:
@@ -30426,6 +30475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -271
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716241, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}

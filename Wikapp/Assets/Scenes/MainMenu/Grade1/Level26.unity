@@ -2119,7 +2119,7 @@ PrefabInstance:
     - target: {fileID: 2023338984088903515, guid: 756b0e1d597e865438361f10c5c4c02d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2023338984088903515, guid: 756b0e1d597e865438361f10c5c4c02d,
         type: 3}
@@ -2268,6 +2268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 3333899552186961739, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+        type: 3}
+      propertyPath: _animateStr
+      value: G1GameToHome
+      objectReference: {fileID: 0}
     - target: {fileID: 3333899552186961740, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -2396,7 +2401,7 @@ PrefabInstance:
     - target: {fileID: 3333899553694673453, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3333899553694673453, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
