@@ -8,6 +8,7 @@ public class QuizQuestionTextWithImage : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] Image questionImageHolder;
+     [SerializeField] public Image questionImage;
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] List<QDragWithTextSO> questions = new List<QDragWithTextSO>();    
     QDragWithTextSO currentQuestion;
@@ -29,7 +30,7 @@ public class QuizQuestionTextWithImage : MonoBehaviour
     public bool isComplete;
     [SerializeField] bool isHoldingSomething;
     int index = -1;
-
+    [SerializeField] bool dragabble;
 
     void Awake()
     {
@@ -98,16 +99,37 @@ public class QuizQuestionTextWithImage : MonoBehaviour
             //int index = Random.Range(0, questions.Count);
             currentQuestion = questions[index];
 
-            questionText.text = currentQuestion.GetQuestionStr();
             if(isHoldingSomething)
             {
                 questionImageHolder.sprite = currentQuestion.GetQuestionHolder();
             }
 
-            for(int i = 0; i < answerImg.Length; i++){
-                TextMeshProUGUI btnText = answerImg[i].GetComponentInChildren<TextMeshProUGUI>();
-                btnText.text = currentQuestion.GetAnswer(i);
+            if(!dragabble)
+            {
+
+                questionText.text = currentQuestion.GetQuestionStr();
+                
+                for(int i = 0; i < answerImg.Length; i++){
+                    TextMeshProUGUI btnText = answerImg[i].GetComponentInChildren<TextMeshProUGUI>();
+                    btnText.text = currentQuestion.GetAnswer(i);
+                }
+
+            }else{
+
+                questionImage.sprite = currentQuestion.GetQuestion();
+                questionText.text = currentQuestion.GetQuestionStr();
+
+                for(int i = 0; i < answerImg.Length; i++){
+
+                    TextMeshProUGUI btnText = answerImg[i].GetComponentInChildren<TextMeshProUGUI>();
+                    Image imgBtn = answerImg[i].GetComponentInChildren<Image>();
+                    
+                    imgBtn.gameObject.transform.position = backToSamePosition[i].position;
+                    btnText.text = currentQuestion.GetAnswer(i);
+                }
             }
+
+
         }
         
     }
