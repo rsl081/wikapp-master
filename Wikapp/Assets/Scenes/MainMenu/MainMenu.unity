@@ -1099,15 +1099,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 96893489}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level46
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &96893487
@@ -1159,11 +1159,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1420049416}
+  - {fileID: 1089785583}
+  - {fileID: 181031963}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &103162060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,15 +2214,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 139309681}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level30
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &139309679
@@ -2268,11 +2274,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 55711271}
+  - {fileID: 996202968}
+  - {fileID: 1336357494}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &157077826
 GameObject:
   m_ObjectHideFlags: 0
@@ -6237,15 +6249,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 521795411}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level36
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &521795409
@@ -6297,11 +6309,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 766933603}
+  - {fileID: 2091622988}
+  - {fileID: 1969988759}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &526955450
 GameObject:
   m_ObjectHideFlags: 0
@@ -6688,15 +6706,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 556577824}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level48
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &556577822
@@ -6748,11 +6766,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 234146171}
+  - {fileID: 2034906322}
+  - {fileID: 597076562}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &557408283
 GameObject:
   m_ObjectHideFlags: 0
@@ -12213,15 +12237,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 927689475}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level31
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &927689473
@@ -12273,11 +12297,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1376319023}
+  - {fileID: 996460717}
+  - {fileID: 1874947846}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &929873940
 GameObject:
   m_ObjectHideFlags: 0
@@ -13632,15 +13662,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1037389446}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level37
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1037389444
@@ -13692,11 +13722,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 841761514}
+  - {fileID: 1228702627}
+  - {fileID: 2116885968}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1048638327
 GameObject:
   m_ObjectHideFlags: 0
@@ -14532,15 +14568,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1086200442}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level42
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1086200440
@@ -14592,11 +14628,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1862118210}
+  - {fileID: 224904100}
+  - {fileID: 1912017877}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1086306560
 GameObject:
   m_ObjectHideFlags: 0
@@ -15402,15 +15444,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1125896509}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level40
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1125896507
@@ -15462,11 +15504,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 388301707}
+  - {fileID: 1180757376}
+  - {fileID: 584277318}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1126671771
 GameObject:
   m_ObjectHideFlags: 0
@@ -15858,15 +15906,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1151519547}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level47
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1151519545
@@ -15918,11 +15966,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1472922513}
+  - {fileID: 625652664}
+  - {fileID: 732496029}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1151728966
 GameObject:
   m_ObjectHideFlags: 0
@@ -16752,15 +16806,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1228487810}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level35
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1228487808
@@ -16812,11 +16866,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1158039249}
+  - {fileID: 974643085}
+  - {fileID: 2090037255}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1228702625
 GameObject:
   m_ObjectHideFlags: 0
@@ -17480,15 +17540,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1253766238}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level38
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1253766236
@@ -17540,11 +17600,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 604525724}
+  - {fileID: 1758012234}
+  - {fileID: 1801053648}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1256882788
 GameObject:
   m_ObjectHideFlags: 0
@@ -19450,15 +19516,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1374097911}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level41
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1374097909
@@ -19510,11 +19576,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1072385505}
+  - {fileID: 492598886}
+  - {fileID: 1056940105}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1376319021
 GameObject:
   m_ObjectHideFlags: 0
@@ -20551,15 +20623,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1437465627}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level45
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1437465625
@@ -20576,7 +20648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20611,11 +20683,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1335119771}
+  - {fileID: 890535087}
+  - {fileID: 1256882790}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1447511364
 GameObject:
   m_ObjectHideFlags: 0
@@ -21485,15 +21563,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1511592630}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level33
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1511592628
@@ -21545,11 +21623,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 998695179}
+  - {fileID: 386957134}
+  - {fileID: 1673587629}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1513950093
 GameObject:
   m_ObjectHideFlags: 0
@@ -24910,15 +24994,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1795283059}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level28
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1795283057
@@ -24970,11 +25054,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 868987230}
+  - {fileID: 1071367944}
+  - {fileID: 1410900470}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1797971645
 GameObject:
   m_ObjectHideFlags: 0
@@ -25491,15 +25581,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1807025770}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level32
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1807025768
@@ -25551,11 +25641,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 579811509}
+  - {fileID: 607715590}
+  - {fileID: 961399985}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1813517140
 GameObject:
   m_ObjectHideFlags: 0
@@ -25864,15 +25960,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1842403218}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level39
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1842403216
@@ -25924,11 +26020,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 23164757}
+  - {fileID: 1587804496}
+  - {fileID: 1380151881}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1845397241
 GameObject:
   m_ObjectHideFlags: 0
@@ -26371,15 +26473,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1871587933}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level44
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1871587931
@@ -26431,11 +26533,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 841136197}
+  - {fileID: 984219718}
+  - {fileID: 2083093107}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1874947844
 GameObject:
   m_ObjectHideFlags: 0
@@ -26892,15 +27000,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1910546542}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level34
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1910546540
@@ -26952,11 +27060,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 1958134359}
+  - {fileID: 2038488644}
+  - {fileID: 910274808}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &1910611014
 GameObject:
   m_ObjectHideFlags: 0
@@ -29676,15 +29790,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2109962937}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level43
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2109962935
@@ -29736,11 +29850,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 763266672}
+  - {fileID: 205442890}
+  - {fileID: 296443475}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &2114332747
 GameObject:
   m_ObjectHideFlags: 0
@@ -30201,15 +30321,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2140757690}
+        m_MethodName: SceneTransition
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level29
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2140757688
@@ -30261,11 +30381,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 0
-  starsImages: []
-  starsSprites: []
+  isUnlocked: 1
+  starsImages:
+  - {fileID: 233775878}
+  - {fileID: 1048638329}
+  - {fileID: 722882722}
+  starsSprites:
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   hideThisShit: {fileID: 1919413551}
-  _animateStr: 
+  _animateStr: G1GameToHome
 --- !u!1 &2146670423
 GameObject:
   m_ObjectHideFlags: 0
