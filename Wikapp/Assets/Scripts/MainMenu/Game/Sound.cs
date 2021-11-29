@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Sound : EventTrigger
 {
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip impact;
 
     private void Start() {
         audioSource = GetComponent<AudioSource>();
@@ -17,6 +18,6 @@ public class Sound : EventTrigger
     }
     public override void OnPointerUp(PointerEventData data)
     {
-        audioSource.Pause();
+        //audioSource.Pause();
     }
 }

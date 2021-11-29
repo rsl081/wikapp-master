@@ -33,6 +33,10 @@ public class UIManager : MonoBehaviour
     Transition transition;
     FluidUI fluidUI;
 
+    AudioSource audioSource;
+    [SerializeField] AudioClip impactError;
+    [SerializeField] AudioClip impactPop;
+
     private void Awake() {
         if(instance == null)
         {
@@ -60,6 +64,7 @@ public class UIManager : MonoBehaviour
     {
         transition = FindObjectOfType<Transition>();
         fluidUI = FindObjectOfType<FluidUI>();
+        audioSource = GetComponent<AudioSource>();
 
         UpdateStarUI();
         UpdateLockedStarUI();
@@ -191,6 +196,7 @@ public class UIManager : MonoBehaviour
         string gameObjectName = mapSelections[_mapIndex].gameObject.name;
         if(mapSelections[_mapIndex].isUnlock == true)//You can open this level panel
         {
+            audioSource.PlayOneShot(impactPop, 0.7f);
             fluidUI.AnimateUIBtn(gameObjectName);
 
             // levelSelectionPanels[_mapIndex].gameObject.SetActive(true);
@@ -199,7 +205,8 @@ public class UIManager : MonoBehaviour
         else
         {
             mapSelections[_mapIndex].transform.DOShakePosition(3,3); //Shake if the card is lock
-            Debug.Log("You cannot open this scene now. Please work hard to collect more candies");
+            audioSource.PlayOneShot(impactError, 0.7f);
+            //Debug.Log("You cannot open this scene now. Please work hard to collect more candies");
         }
     }
 
