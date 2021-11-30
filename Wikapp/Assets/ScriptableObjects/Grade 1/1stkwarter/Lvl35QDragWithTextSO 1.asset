@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0997ff122e8849f44bfd6da9407c9290, type: 3}
+  m_Name: Lvl35QDragWithTextSO 1
+  m_EditorClassIdentifier: 
+  source: []
+  question: {fileID: 0}
+  questionWithHolder: {fileID: 21300000, guid: 3a90787a84b887b41a01835fd2dd2abb, type: 3}
+  questionStr: Nasaan ang lamesa?
+  answer:
+  - Gitna
+  - Kaliwa
+  - Kanan
+  answerSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  correctAnswerIndex: 0
