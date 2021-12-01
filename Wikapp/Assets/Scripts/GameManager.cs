@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
         quiz.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
-
+        
     }
     private void OnDestroy()
     {

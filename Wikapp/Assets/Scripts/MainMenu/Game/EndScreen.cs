@@ -18,6 +18,7 @@ public class EndScreen : MonoBehaviour
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         transition = FindObjectOfType<Transition>();
+        EventCenter.GetInstance().EventTrigger("DestroyMyMainMenuMusic");
     }
 
     public void ShowFinalScore()
