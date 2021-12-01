@@ -8,10 +8,6 @@ public class MainMenuMusic : MonoBehaviour
     AudioSource audioSource;
     private void Awake() {
 
-     
-        Scene scene = SceneManager.GetActiveScene();
-
-
         DontDestroyOnLoad(gameObject);
         if(FindObjectsOfType<AudioManager>().Length > 1){
 
@@ -23,7 +19,6 @@ public class MainMenuMusic : MonoBehaviour
 
     }
 
-
     private void OnDestroy() {
         
         EventCenter.GetInstance().RemoveEventListener("DestroyMyMainMenuMusic", DestroyMyMainMenuMusic);
@@ -31,7 +26,9 @@ public class MainMenuMusic : MonoBehaviour
 
     public void DestroyMyMainMenuMusic()
     {
-            Destroy(gameObject);
+        Destroy(this.gameObject);
     }
+
+
 
 }
