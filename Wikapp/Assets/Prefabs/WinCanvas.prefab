@@ -202,6 +202,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 0}
   _animateStr: KndrGameToHome
 --- !u!114 &3333899552186961740
 MonoBehaviour:

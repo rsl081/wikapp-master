@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip impactError;
     [SerializeField] AudioClip impactPop;
+    [SerializeField] AudioClip poppingSound;
 
     private void Awake() {
         if(instance == null)
@@ -49,8 +50,11 @@ public class UIManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
         AnimatePanels();
+        
     }
 
 
@@ -64,21 +68,26 @@ public class UIManager : MonoBehaviour
     {
         transition = FindObjectOfType<Transition>();
         fluidUI = FindObjectOfType<FluidUI>();
-        audioSource = GetComponent<AudioSource>();
+
+        
 
         UpdateStarUI();
         UpdateLockedStarUI();
         UpdateUnLockedStarUI();
 
+        EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
+        EventCenter.GetInstance().EventTrigger("DestroyGameMusic");
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateStarUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateLockedStarUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateUnLockedStarUI);
+
     }
     private void OnDestroy()
     {
         EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateStarUI);
         EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateLockedStarUI);
         EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateUnLockedStarUI);
+     
     }
 
     //Update OUR Candies UI on the top left corner
@@ -251,14 +260,31 @@ public class UIManager : MonoBehaviour
     }
 
     #region Animate Panels XD
+    int x = 0;
     private void AnimatePanels()
 	{
+        
+        
 		for (int i = 0; i < 4; i++)
 		{
 			mapSelections[i].transform.localScale = Vector3.zero;
 			AnimatePanel(i, INITIAL_DELAY + DELAY_BETWEEN_BUTTONS * i);
+            StartCoroutine(SoundEffect(INITIAL_DELAY + DELAY_BETWEEN_BUTTONS * i));
 		}
+
+
 	}
+   
+    IEnumerator SoundEffect(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if(x <= animationSequences.Count)
+        {
+            audioSource.PlayOneShot(poppingSound, 0.7f);
+            StartCoroutine(SoundEffect(delay));
+        }
+        x+=1;
+    }
 
     private void AnimatePanel(int index, float delay)
 	{
@@ -276,10 +302,13 @@ public class UIManager : MonoBehaviour
 
 		var seq = animationSequences[index];
 		var button = mapSelections[index];
+        
 
 		seq.Append(button.transform.DOScale(1.3f, 0.1f));
 		seq.Append(button.transform.DOPunchScale(Vector3.one * 0.5f, 0.7f, 5, 0.6f).SetEase(Ease.OutCirc));
 		seq.PrependInterval(delay);
+        
+        
 	}
     #endregion
 }

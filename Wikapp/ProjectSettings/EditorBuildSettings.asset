@@ -113,13 +113,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu/Grade1/Level32.unity
     guid: d06d763d863556a47998df35c69d65a8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu/Grade1/Level33.unity
     guid: 501ac4ec9afa6b04bbb77dd28b9db7e5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu/Grade1/Level34.unity
     guid: 42b9bb70d77f9c14bbad335d5c4b27ac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu/Grade1/Level35.unity
     guid: c6bca3de026179346abb62c2a7f89798
   - enabled: 1

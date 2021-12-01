@@ -24,6 +24,7 @@ public class QuizTextGameManager : MonoBehaviour
         endScreen.gameObject.SetActive(false);
 
     }
+
     private void OnDestroy()
     {
         EventCenter.GetInstance().RemoveEventListener("UpdateScorePercent", UpdateScore);

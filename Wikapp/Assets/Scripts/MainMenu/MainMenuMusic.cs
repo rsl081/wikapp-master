@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AudioManager : MonoBehaviour
+public class MainMenuMusic : MonoBehaviour
 {
     AudioSource audioSource;
-    AudioManager audioManager;
     private void Awake() {
 
-        audioManager = FindObjectOfType<AudioManager>();
+     
         Scene scene = SceneManager.GetActiveScene();
 
 
@@ -20,17 +19,17 @@ public class AudioManager : MonoBehaviour
 
         }
 
-        EventCenter.GetInstance().AddEventListener("DestroyMyAudioManager", DestroyMyAudioManager);
+        EventCenter.GetInstance().AddEventListener("DestroyMyMainMenuMusic", DestroyMyMainMenuMusic);
 
     }
 
 
     private void OnDestroy() {
         
-        EventCenter.GetInstance().RemoveEventListener("DestroyMyAudioManager", DestroyMyAudioManager);
+        EventCenter.GetInstance().RemoveEventListener("DestroyMyMainMenuMusic", DestroyMyMainMenuMusic);
     }
 
-    public void  DestroyMyAudioManager()
+    public void DestroyMyMainMenuMusic()
     {
             Destroy(gameObject);
     }
