@@ -1394,7 +1394,7 @@ PrefabInstance:
     - target: {fileID: 3333899552186961737, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
       propertyPath: m_Name
-      value: 25
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 3333899552186961739, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
@@ -1504,7 +1504,7 @@ PrefabInstance:
     - target: {fileID: 3333899553694673449, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
       propertyPath: levelIndex
-      value: 25
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 3333899553694673450, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
