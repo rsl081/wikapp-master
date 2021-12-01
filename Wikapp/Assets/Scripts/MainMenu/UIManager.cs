@@ -278,7 +278,7 @@ public class UIManager : MonoBehaviour
     IEnumerator SoundEffect(float delay)
     {
         yield return new WaitForSeconds(delay);
-        if(x <= animationSequences.Count)
+        if(x <= 1)
         {
             audioSource.PlayOneShot(poppingSound, 0.7f);
             StartCoroutine(SoundEffect(delay));
@@ -304,8 +304,8 @@ public class UIManager : MonoBehaviour
 		var button = mapSelections[index];
         
 
-		seq.Append(button.transform.DOScale(1.3f, 0.1f));
-		seq.Append(button.transform.DOPunchScale(Vector3.one * 0.5f, 0.7f, 5, 0.6f).SetEase(Ease.OutCirc));
+		seq.Append(button.transform.DOScale(1.58f, 0.1f));
+		seq.Append(button.transform.DOPunchScale(Vector3.one * 0.1f, 0.7f, 5, 0.6f).SetEase(Ease.OutCirc));
 		seq.PrependInterval(delay);
         
         

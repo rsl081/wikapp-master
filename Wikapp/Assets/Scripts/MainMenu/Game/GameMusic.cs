@@ -6,8 +6,10 @@ using UnityEngine;
 public class GameMusic : MonoBehaviour
 {
      AudioSource audioSource;
+     MainMenuMusic mainMenuMusic;
     private void Awake() {
-
+        
+        mainMenuMusic = FindObjectOfType<MainMenuMusic>();
 
         DontDestroyOnLoad(gameObject);
         if(FindObjectsOfType<AudioManager>().Length > 1){
@@ -16,6 +18,12 @@ public class GameMusic : MonoBehaviour
 
         }
 
+        if(mainMenuMusic != null)
+        {
+            EventCenter.GetInstance().EventTrigger("DestroyMyMainMenuMusic");
+        }
+
+        
         EventCenter.GetInstance().AddEventListener("DestroyGameMusic", DestroyGameMusic);
 
     }
