@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "QuesitonTextSO", fileName ="Question 1")]
 public class QuestionTextSO : ScriptableObject
 {
+    [TextArea(10, 14)]
     [SerializeField] string question;
     [SerializeField] string[] answer = new string[3];
     [SerializeField] int correctAnswerIndex;
