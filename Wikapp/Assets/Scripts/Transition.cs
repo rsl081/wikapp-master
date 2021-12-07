@@ -21,7 +21,22 @@ public class Transition : MonoBehaviour
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(timeToWait);
-        LoadNextScene();
+        if(Info.Instance.isGameSaved())
+        {
+            StringSceneToLoad();
+        }else{
+            LoadNextScene();
+        }
+    }
+
+    public void TutorialBtn()
+    {
+        if(Info.Instance.isGameSaved())
+        {
+            StringSceneToLoad();
+        }else{
+            LoadNextScene();
+        }
     }
 
     public void LoadNextScene()
