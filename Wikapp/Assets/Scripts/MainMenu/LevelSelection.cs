@@ -18,7 +18,7 @@ public class LevelSelection : MonoBehaviour
         transition = FindObjectOfType<Transition>();
         fluidUI = FindObjectOfType<FluidUI>();
 
-        //UpdateLevelButton();
+        UpdateLevelButton();
         
         EventCenter.GetInstance().AddEventListener("PressStarButton", UnlockLevel);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateLevelButton);

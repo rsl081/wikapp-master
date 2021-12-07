@@ -347,6 +347,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3091488062517049132, guid: bc6ed8b2afb818f4ea861e984bb84814,
         type: 3}
+      propertyPath: sceneName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091488062517049132, guid: bc6ed8b2afb818f4ea861e984bb84814,
+        type: 3}
       propertyPath: isLoadAutoStart
       value: 1
       objectReference: {fileID: 0}

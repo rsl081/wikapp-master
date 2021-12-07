@@ -54,12 +54,12 @@ public class InfoGUI : MonoBehaviour
 
         transition = FindObjectOfType<Transition>();
 
-        Info.Instance.deletePlayerAndProgress();
+        //Info.Instance.deletePlayerAndProgress();
 
-        if(Info.Instance.isGameSaved())
-        {
-            transition.LoadNextScene();
-        }
+        // if(Info.Instance.isGameSaved())
+        // {
+        //     transition.LoadNextScene();
+        // }
 
         populateToDropDownMonth();
         populateToDropDownDay();

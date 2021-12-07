@@ -19,20 +19,31 @@ public class Tutorial : MonoBehaviour
 
     Transition transition;
 
+    private void Awake() {
+
+        //Info.Instance.deletePlayerAndProgress();
+      
+
+    }
+
     void Start () {
         Init();
 	}
 
     void Init()
     {
-        transition = FindObjectOfType<Transition>();
+        // transition = FindObjectOfType<Transition>();
 
-        Info.Instance.deletePlayerAndProgress();
-        if(Info.Instance.isGameSaved())
-        {
-            transition.LoadNextScene();
-        }
+        // if(Info.Instance.isGameSaved())
+        // {
+        //     transition.StringSceneToLoad();
+        //     transition.LoadNextScene();
 
+        // }else{
+
+        // }
+
+        
         dotBtn[0].interactable = false;
         for(int i = 0; i < dotBtn.Length; i++)
         {
