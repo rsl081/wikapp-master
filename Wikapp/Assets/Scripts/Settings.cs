@@ -90,4 +90,12 @@ public class Settings : MonoBehaviour
         transition.StringSceneToLoad();
 
     }
+
+    public void TutorialBtn()
+    {
+        Destroy(mainCanvas);
+        SceneManager.LoadScene("TutorialScene");
+    }
+
+
 }
