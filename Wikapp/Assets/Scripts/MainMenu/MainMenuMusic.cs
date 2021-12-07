@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuMusic : MonoBehaviour
 {
-    AudioSource audioSource;
     private void Awake() {
 
         DontDestroyOnLoad(gameObject);

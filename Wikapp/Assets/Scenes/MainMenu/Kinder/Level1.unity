@@ -1917,6 +1917,25 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0.21003008}
   m_SizeDelta: {x: -20, y: 8.041105}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2138633527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2023338984088903495, guid: 756b0e1d597e865438361f10c5c4c02d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2023338981973300009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2138633532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138633527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47886721433e0414da4df4354b3987fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2023338981973300010}
 --- !u!1001 &2023338981973300009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2054,8 +2073,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8809896818335501012, guid: 756b0e1d597e865438361f10c5c4c02d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Music
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756b0e1d597e865438361f10c5c4c02d, type: 3}
+--- !u!82 &2023338981973300010 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7231639976612486619, guid: 756b0e1d597e865438361f10c5c4c02d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2023338981973300009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3244089573215572162 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,

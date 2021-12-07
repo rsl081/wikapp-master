@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class GameMusic : MonoBehaviour
 {
-     AudioSource audioSource;
-     MainMenuMusic mainMenuMusic;
+    AudioSource audioSource;
+    MainMenuMusic mainMenuMusic;
     private void Awake() {
         
         mainMenuMusic = FindObjectOfType<MainMenuMusic>();
+        audioSource = GetComponent<AudioSource>();
 
         DontDestroyOnLoad(gameObject);
         if(FindObjectsOfType<AudioManager>().Length > 1){
@@ -22,6 +23,13 @@ public class GameMusic : MonoBehaviour
         {
             EventCenter.GetInstance().EventTrigger("DestroyMyMainMenuMusic");
         }
+
+        if(PlayerPrefs.GetInt("muted") == 1)
+        {
+            audioSource.Stop();
+        }
+
+
 
         
         EventCenter.GetInstance().AddEventListener("DestroyGameMusic", DestroyGameMusic);
@@ -38,4 +46,5 @@ public class GameMusic : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
