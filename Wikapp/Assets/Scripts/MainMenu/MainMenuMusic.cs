@@ -7,7 +7,6 @@ public class MainMenuMusic : MonoBehaviour
 {
     private void Awake() {
 
-        DontDestroyOnLoad(gameObject);
         if(FindObjectsOfType<AudioManager>().Length > 1){
 
             Destroy(gameObject);

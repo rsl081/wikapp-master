@@ -56,17 +56,19 @@ public class Settings : MonoBehaviour
         if(m_Toggle.isOn)
         {
         
-            foreach(AudioSource audio in audioSource)
-            {
-                audio.Play();
-            }
+            // foreach(AudioSource audio in audioSource)
+            // {
+            //     audio.Play();
+            // }
+            audioSource[2].Play();
             PlayerPrefs.SetInt("muted", 0);
 
         }else{
-            foreach(AudioSource audio in audioSource)
-            {
-                audio.Stop();
-            }
+            // foreach(AudioSource audio in audioSource)
+            // {
+            //     audio.Stop();
+            // }
+            audioSource[2].Stop();
             PlayerPrefs.SetInt("muted", 1);
 
         }

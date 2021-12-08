@@ -15253,7 +15253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUMULOY
+  m_text: MAGPATULOY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -15681,8 +15681,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.7, y: 47}
-  m_SizeDelta: {x: 110.792755, y: 41.051224}
+  m_AnchoredPosition: {x: -2.000003, y: 47}
+  m_SizeDelta: {x: 175.7077, y: 41.051224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1040237811
 MonoBehaviour:
@@ -23998,7 +23998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUMULOY
+  m_text: MAGPATULOY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -25557,8 +25557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.7, y: 47}
-  m_SizeDelta: {x: 110.792755, y: 41.051224}
+  m_AnchoredPosition: {x: -2, y: 47}
+  m_SizeDelta: {x: 175.7077, y: 41.051224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1640898868
 MonoBehaviour:
@@ -26172,7 +26172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUMULOY
+  m_text: MAGPATULOY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -29598,8 +29598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.7, y: 47}
-  m_SizeDelta: {x: 110.792755, y: 41.051224}
+  m_AnchoredPosition: {x: -2.000003, y: 47}
+  m_SizeDelta: {x: 175.7077, y: 41.051224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1905850871
 MonoBehaviour:
@@ -29645,7 +29645,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 103380023}
-        m_MethodName: OkayBtn
+        m_MethodName: TutorialBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
