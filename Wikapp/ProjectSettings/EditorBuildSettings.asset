@@ -161,4 +161,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu/Grade1/Level48.unity
     guid: f13a57b045a89b145acd2b738625d40a
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/Credits.unity
+    guid: 91154df8c168ea44ea494e0d16dc19c0
   m_configObjects: {}
