@@ -54,13 +54,6 @@ public class InfoGUI : MonoBehaviour
 
         transition = FindObjectOfType<Transition>();
 
-        //Info.Instance.deletePlayerAndProgress();
-
-        // if(Info.Instance.isGameSaved())
-        // {
-        //     transition.LoadNextScene();
-        // }
-
         populateToDropDownMonth();
         populateToDropDownDay();
         populateToDropDownYear();
@@ -88,7 +81,7 @@ public class InfoGUI : MonoBehaviour
     
             string player = JsonUtility.ToJson(Info.Instance.currentPlayer);
             Info.Instance.setPlayer(player);
-            transition.LoadNextScene();
+            transition.SubmitInfo();
             
         }
     }

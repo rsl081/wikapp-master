@@ -38,6 +38,16 @@ public class Transition : MonoBehaviour
             LoadNextScene();
         }
     }
+    public void SubmitInfo()
+    {
+        if(Info.Instance.isGameSaved())
+        {
+            StringSceneToLoad();
+        }
+        else{
+            LoadNextScene();
+        }
+    }
 
     public void LoadNextScene()
     {

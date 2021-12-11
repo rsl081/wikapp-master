@@ -30,7 +30,6 @@ public class EndScreen : MonoBehaviour
     public void ShowStarGUI()
     {
         
-        
         if(scoreKeeper.CalculateScore() >= 90){ 
 
             ShowCalculatedStar(3);

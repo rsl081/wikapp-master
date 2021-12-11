@@ -7,25 +7,22 @@ using UnityEngine.SceneManagement;
 public class Settings : MonoBehaviour
 {
     Toggle m_Toggle;
-    [SerializeField] AudioSource[] audioSource;
+    [SerializeField] AudioSource audioSource;
     [SerializeField] GameObject mainCanvas;
     [SerializeField] GameObject progressPanel;
-    Transition transition;
     private void Awake() {
-        //PlayerPrefs.DeleteAll();
-        transition = FindObjectOfType<Transition>();
-        m_Toggle = GetComponentInChildren<Toggle>();
-       // GameObject music = GameObject.FindGameObjectWithTag("Music");
-        
 
-        audioSource = FindObjectsOfType<AudioSource>();
+        m_Toggle = GetComponentInChildren<Toggle>();
+        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+       
+        //audioSource = FindObjectsOfType<AudioSource>();
        
         if(PlayerPrefs.GetInt("muted") == 1)
         {
-            foreach(AudioSource audio in audioSource)
-            {
-                audio.Stop();
-            }
+            // foreach(AudioSource audio in audioSource)
+            // {
+            // }
+                audioSource.Stop();
         
             if(m_Toggle != null)
             {
@@ -60,7 +57,7 @@ public class Settings : MonoBehaviour
             // {
             //     audio.Play();
             // }
-            audioSource[2].Play();
+            audioSource.Play();
             PlayerPrefs.SetInt("muted", 0);
 
         }else{
@@ -68,7 +65,7 @@ public class Settings : MonoBehaviour
             // {
             //     audio.Stop();
             // }
-            audioSource[2].Stop();
+            audioSource.Stop();
             PlayerPrefs.SetInt("muted", 1);
 
         }
@@ -89,7 +86,7 @@ public class Settings : MonoBehaviour
         Info.Instance.deletePlayerAndProgress();
         progressPanel.SetActive(false);
         Destroy(mainCanvas);
-        transition.StringSceneToLoad();
+        SceneManager.LoadScene("InformationScene");
 
     }
 
@@ -98,6 +95,10 @@ public class Settings : MonoBehaviour
         Destroy(mainCanvas);
         SceneManager.LoadScene("TutorialScene");
     }
-
+    public void Credits()
+    {
+        Destroy(mainCanvas);
+        SceneManager.LoadScene("Credits");
+    }
 
 }
