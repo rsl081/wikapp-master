@@ -15,6 +15,6 @@ MonoBehaviour:
   question: {fileID: 21300000, guid: 0dfb5ed9b7450c547a220d054e52d566, type: 3}
   answer:
   - tee
-  - ess
+  - es
   - u
   correctAnswerIndex: 1

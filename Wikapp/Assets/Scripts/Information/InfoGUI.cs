@@ -96,13 +96,13 @@ public class InfoGUI : MonoBehaviour
             if(name == ""){
                 nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().font = nougatFont;
                 nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
-                nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Missing Field";
+                nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Kinakailangan";
                 nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
             }
             if(age == ""){
                 ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().font = nougatFont;
                 ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
-                ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Missing Field";
+                ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Kinakailangan";
                 ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
             }
 

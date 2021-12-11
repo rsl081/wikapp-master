@@ -18,6 +18,10 @@ MonoBehaviour:
   questionStr: Maganda
   answer:
   - Marikit
-  - Bobo
-  - Mataba
+  - Matalino
+  - Masaya
+  answerSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   correctAnswerIndex: 0

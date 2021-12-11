@@ -15,7 +15,7 @@ MonoBehaviour:
   source: []
   question: {fileID: 0}
   questionWithHolder: {fileID: 21300000, guid: 3a90787a84b887b41a01835fd2dd2abb, type: 3}
-  questionStr: Nasaan ang lamesa?
+  questionStr: Nasaan ang mesa?
   answer:
   - Gitna
   - Kaliwa

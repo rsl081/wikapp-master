@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: {fileID: 21300000, guid: eef7ff713830cd046a32c9df4c150299, type: 3}
   answer:
-  - bee
+  - bi
   - cee
   - dee
   correctAnswerIndex: 0
