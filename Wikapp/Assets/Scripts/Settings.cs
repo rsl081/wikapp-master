@@ -15,13 +15,10 @@ public class Settings : MonoBehaviour
         m_Toggle = GetComponentInChildren<Toggle>();
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
        
-        //audioSource = FindObjectsOfType<AudioSource>();
        
         if(PlayerPrefs.GetInt("muted") == 1)
         {
-            // foreach(AudioSource audio in audioSource)
-            // {
-            // }
+       
                 audioSource.Stop();
         
             if(m_Toggle != null)
@@ -53,18 +50,10 @@ public class Settings : MonoBehaviour
         if(m_Toggle.isOn)
         {
         
-            // foreach(AudioSource audio in audioSource)
-            // {
-            //     audio.Play();
-            // }
             audioSource.Play();
             PlayerPrefs.SetInt("muted", 0);
 
         }else{
-            // foreach(AudioSource audio in audioSource)
-            // {
-            //     audio.Stop();
-            // }
             audioSource.Stop();
             PlayerPrefs.SetInt("muted", 1);
 
