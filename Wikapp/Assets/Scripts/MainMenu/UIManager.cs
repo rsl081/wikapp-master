@@ -37,6 +37,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] AudioClip impactError;
     [SerializeField] AudioClip impactPop;
     [SerializeField] AudioClip poppingSound;
+    AudioManager audioManager;
 
     private void Awake() {
         if(instance == null)
@@ -60,7 +61,6 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        //Info.Instance.deletePlayerAndProgress();
         init();
     }
 
@@ -69,14 +69,15 @@ public class UIManager : MonoBehaviour
         transition = FindObjectOfType<Transition>();
         fluidUI = FindObjectOfType<FluidUI>();
 
-        
-
         UpdateStarUI();
         UpdateLockedStarUI();
         UpdateUnLockedStarUI();
 
+        
         EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
-        EventCenter.GetInstance().EventTrigger("DestroyGameMusic");
+        //EventCenter.GetInstance().EventTrigger("DestroyGameMusic");
+
+
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateStarUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateLockedStarUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateUnLockedStarUI);

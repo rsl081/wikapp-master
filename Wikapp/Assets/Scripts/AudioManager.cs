@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
 
     public void  DestroyMyAudioManager()
     {
-            Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 }
