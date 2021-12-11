@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fe38efb7881147a93d3d62d18a25d, type: 3}
   m_Name: Lvl28Question 3
   m_EditorClassIdentifier: 
-  question: Lahat ay buntis.
+  question: Ang lahat ay bumili ng pagkain.
   answer:
   - Panaklaw
   - Pananong

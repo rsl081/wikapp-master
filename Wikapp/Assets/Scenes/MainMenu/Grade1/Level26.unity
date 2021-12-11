@@ -466,10 +466,10 @@ RectTransform:
   m_Father: {fileID: 1022132883}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 683}
-  m_SizeDelta: {x: 0, y: 104.04123}
+  m_AnchorMin: {x: 0, y: 0.80818766}
+  m_AnchorMax: {x: 1, y: 0.8973126}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565729891
 MonoBehaviour:
@@ -1284,6 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionImageHolder: {fileID: 850848787}
+  questionImage: {fileID: 0}
   questionText: {fileID: 800602312}
   questions:
   - {fileID: 11400000, guid: 750c90398b8bf554ab2da8ba4b6bcf83, type: 2}
@@ -1299,6 +1300,7 @@ MonoBehaviour:
   progressBar: {fileID: 1542170574}
   isComplete: 0
   isHoldingSomething: 1
+  dragabble: 0
 --- !u!114 &1022132880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,9 +1443,9 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 0
-    m_Bottom: 105
+    m_Bottom: -196
   m_ChildAlignment: 4
-  m_Spacing: 23.7
+  m_Spacing: -450.7
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0

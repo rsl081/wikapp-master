@@ -15,7 +15,7 @@ MonoBehaviour:
   source: []
   question: {fileID: 0}
   questionWithHolder: {fileID: 21300000, guid: 9b77b45e960989e42b9659ea880c6e94, type: 3}
-  questionStr: Nasaan ang lolipop?
+  questionStr: Nasaan ang lollipop?
   answer:
   - Gitna
   - Kaliwa

@@ -23,7 +23,7 @@ public class EndScreen : MonoBehaviour
 
     public void ShowFinalScore()
     {
-        finalScoreText.text = "You got a\n score of "
+        finalScoreText.text = "Nakakuha ka\nng "
             + scoreKeeper.CalculateScore() + "%";
     }
 
