@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: []
   question: {fileID: 0}
-  questionWithHolder: {fileID: 21300000, guid: c0f8e39e8eee2a74998509142a2f41bf, type: 3}
+  questionWithHolder: {fileID: 21300000, guid: 83fdf6ea6c8410e4fa742aa673fdcf77, type: 3}
   questionStr: Ilang bola ang hawak ni Ben?
   answer:
-  - 100
-  - 140
-  - 120
+  - 20
+  - 26
+  - 5
   answerSprite:
   - {fileID: 0}
   - {fileID: 0}

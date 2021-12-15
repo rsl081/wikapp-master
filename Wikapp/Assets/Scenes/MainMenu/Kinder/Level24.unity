@@ -1897,12 +1897,12 @@ PrefabInstance:
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -271
+      value: -176
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160
+      value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
@@ -4283,8 +4283,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815567121}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0, z: 0}
-  m_LocalScale: {x: 0.89072996, y: 0.89072996, z: 0.89072996}
+  m_LocalPosition: {x: 0.02, y: 2.48, z: 0}
+  m_LocalScale: {x: -0.89073, y: 0.89072996, z: 0.89072996}
   m_Children:
   - {fileID: 130532620}
   - {fileID: 1074937692}
@@ -4308,7 +4308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 4
-  anchorOffset: {x: 0.02, y: 0, z: 0}
+  anchorOffset: {x: 0.02, y: 2.48, z: 0}
 --- !u!212 &1815567124
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4950,7 +4950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030470315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5225, y: 0, z: 0}
+  m_LocalPosition: {x: -1.6825, y: 0, z: 0}
   m_LocalScale: {x: 0.89072996, y: 0.89072996, z: 0.89072996}
   m_Children:
   - {fileID: 1884158369}
@@ -4975,7 +4975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 3
-  anchorOffset: {x: 1.29, y: 0, z: 0}
+  anchorOffset: {x: 1.13, y: 0, z: 0}
 --- !u!212 &2030470318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5193,7 +5193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084708159}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5525, y: 0, z: 0}
+  m_LocalPosition: {x: 1.8325, y: 0, z: 0}
   m_LocalScale: {x: 0.89072996, y: 0.89072996, z: 0.89072996}
   m_Children:
   - {fileID: 573214057}
@@ -5218,7 +5218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 5
-  anchorOffset: {x: -1.26, y: 0, z: 0}
+  anchorOffset: {x: -0.98, y: 0, z: 0}
 --- !u!212 &2084708162
 SpriteRenderer:
   m_ObjectHideFlags: 0

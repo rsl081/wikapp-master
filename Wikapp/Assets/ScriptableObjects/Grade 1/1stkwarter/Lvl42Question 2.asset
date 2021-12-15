@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fe38efb7881147a93d3d62d18a25d, type: 3}
   m_Name: Lvl42Question 2
   m_EditorClassIdentifier: 
-  question: <u>nawala ang kanyang saya</u>
+  question: <u>nawala ang kaniyang saya</u>
   answer:
   - mabilis
   - makupad

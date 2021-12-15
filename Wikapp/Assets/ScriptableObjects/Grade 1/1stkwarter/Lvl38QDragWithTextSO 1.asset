@@ -18,7 +18,7 @@ MonoBehaviour:
   questionStr: Kulay ng mukha?
   answer:
   - Dilaw
-  - Birdie
+  - Pula
   - Asul
   answerSprite:
   - {fileID: 0}

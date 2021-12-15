@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fe38efb7881147a93d3d62d18a25d, type: 3}
   m_Name: Lvl45Question 1
   m_EditorClassIdentifier: 
-  question: Binilhan ni Russel ng bagong sapatos ang kanyang nanay. Ano ang naramdaman
-    ng aking nanay?
+  question: "Binilhan ni Russel ng \nbagong sapatos ang kaniyang nanay. \nAno ang
+    naramdaman \nng kaniyang nanay?"
   answer:
   - masaya
   - galit
