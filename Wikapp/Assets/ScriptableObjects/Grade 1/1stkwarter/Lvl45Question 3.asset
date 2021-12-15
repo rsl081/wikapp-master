@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fe38efb7881147a93d3d62d18a25d, type: 3}
   m_Name: Lvl45Question 3
   m_EditorClassIdentifier: 
-  question: Nadapa si Angela. Ano ang damdamin ni Angela sa pagkadapa niya?
+  question: "Nadapa si Angela. \nAno ang \ndamdamin ni Angela\nsa pagkadapa \nniya?"
   answer:
   - nalungkot
   - natuto

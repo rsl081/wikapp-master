@@ -11,6 +11,10 @@ public class Transition : MonoBehaviour
     int currentSceneIndex;
     void Start()
     {
+
+        EventCenter.GetInstance().EventTrigger("PressStarButton");
+        EventCenter.GetInstance().EventTrigger("UpdateMap");
+
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if(currentSceneIndex == 0 && isLoadAutoStart)
         {
@@ -20,6 +24,7 @@ public class Transition : MonoBehaviour
 
     IEnumerator WaitForTime()
     {
+        
         yield return new WaitForSeconds(timeToWait);
         if(Info.Instance.isGameSaved())
         {

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: []
   question: {fileID: 0}
-  questionWithHolder: {fileID: 21300000, guid: da42fc8427768fe42b2bc48ea55ff9c1, type: 3}
-  questionStr: Sa June, ilan araw ang meron?
+  questionWithHolder: {fileID: 21300000, guid: e8a4736df1aa28c4196adae547d6ebd2, type: 3}
+  questionStr: Ilang araw ang mayroon sa buwan ng Hunyo?
   answer:
   - 1
   - 2

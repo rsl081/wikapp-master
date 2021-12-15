@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fe38efb7881147a93d3d62d18a25d, type: 3}
   m_Name: Lvl45Question 2
   m_EditorClassIdentifier: 
-  question: Masipag na bata si Harold. Tumutulong sya sa kanyang ina sa mga gawain.
-    Anong pag-uugali mayroon si Harold?
+  question: "Masipag na bata\nsi Harold. \nTumutulong siya\nsa kaniyang  ina sa mga
+    gawain. \nAnong pag-uugali \nmayroon si Harold?"
   answer:
-  - tanga
-  - maasahan
+  - matalino
+  - maaasahan
   - tamad
   correctAnswerIndex: 1

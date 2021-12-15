@@ -50,7 +50,7 @@ public class QuizEdad : MonoBehaviour
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
-
+      
         int agePlayer = int.Parse(Info.Instance.getPlayer()._age);
 
         string monthPlayer = Info.Instance.getPlayer()._month;

@@ -15,7 +15,6 @@ public class Loading : MonoBehaviour
     {
         
         transition = FindObjectOfType<Transition>();
-
     }
 
     // Update is called once per frame
@@ -32,4 +31,6 @@ public class Loading : MonoBehaviour
         
         loadingImage.fillAmount = timerValue / transition.timeToWait;
     }
+
+    
 }

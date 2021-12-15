@@ -49,5 +49,6 @@ public class Info : Singleton<Info>
     public bool isGameSaved()
     {
         return PlayerPrefs.HasKey(Constants.Instance.PLAYER_KEY);
+        
     }
 }

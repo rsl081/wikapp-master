@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: []
   question: {fileID: 0}
-  questionWithHolder: {fileID: 21300000, guid: d5bfb64ff3f7757438d6f076c529b4e6, type: 3}
-  questionStr: Sa January, gaano kadami ang napitas na mansanas?
+  questionWithHolder: {fileID: 21300000, guid: e31bb2b063d11774d92113ff1980d25d, type: 3}
+  questionStr: Sa buwan ng Enero, gaano karami ang napitas na mansanas?
   answer:
-  - 3
-  - 2
-  - 1
+  - 30
+  - 20
+  - 10
   answerSprite:
   - {fileID: 0}
   - {fileID: 0}

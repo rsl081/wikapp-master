@@ -17,7 +17,7 @@ MonoBehaviour:
   questionWithHolder: {fileID: 21300000, guid: cf261d3399b15484fbec3d7c56535ff8, type: 3}
   questionStr: Nasaan ang keyk?
   answer:
-  - Loob ng box
+  - Loob ng kahon
   - Kaliwa
   - Kanan
   answerSprite:

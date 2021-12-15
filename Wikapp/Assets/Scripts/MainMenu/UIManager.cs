@@ -72,11 +72,9 @@ public class UIManager : MonoBehaviour
         UpdateStarUI();
         UpdateLockedStarUI();
         UpdateUnLockedStarUI();
-
         
         EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
         //EventCenter.GetInstance().EventTrigger("DestroyGameMusic");
-
 
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateStarUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateLockedStarUI);
