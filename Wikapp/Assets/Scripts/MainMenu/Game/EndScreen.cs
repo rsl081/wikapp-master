@@ -66,14 +66,16 @@ public class EndScreen : MonoBehaviour
 
     private void ShowNextBtn()
     {
-        int previousLvIndex = levelIndex - 1;// PlayerPrefs.GetInt("Lv" + gameObject.name) - 1;
-        Debug.Log(previousLvIndex);
-        if(PlayerPrefs.GetInt("Lv" + levelIndex) > 0)//At least get one stars in previous level
-        {
-            //isUnlocked = true;//can unlock the next level
-            //! Note Button would appear here
-            lockNextImage.gameObject.SetActive(true);
-        }
+        // int previousLvIndex = levelIndex - 1;// PlayerPrefs.GetInt("Lv" + gameObject.name) - 1;
+        // Debug.Log(PlayerPrefs.GetInt("Lv" + levelIndex));
+        // if(PlayerPrefs.GetInt("Lv" + levelIndex) > 0)//At least get one stars in previous level
+        // {
+        //     //isUnlocked = true;//can unlock the next level
+        //     //! Note Button would appear here
+        //     lockNextImage.gameObject.SetActive(true);
+        // }else{
+        //     lockNextImage.gameObject.SetActive(false);
+        // }
     }
 
     private void StarFrameGUI()

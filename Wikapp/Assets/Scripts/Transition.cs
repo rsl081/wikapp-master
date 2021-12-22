@@ -11,9 +11,14 @@ public class Transition : MonoBehaviour
     int currentSceneIndex;
     void Start()
     {
+        if(EventCenter.GetInstance() == null){
 
-        EventCenter.GetInstance().EventTrigger("PressStarButton");
-        EventCenter.GetInstance().EventTrigger("UpdateMap");
+            EventCenter.GetInstance().Clear();
+            EventCenter.GetInstance().EventTrigger("PressStarButton");
+            EventCenter.GetInstance().EventTrigger("UpdateMap");
+        }
+      
+        
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if(currentSceneIndex == 0 && isLoadAutoStart)
