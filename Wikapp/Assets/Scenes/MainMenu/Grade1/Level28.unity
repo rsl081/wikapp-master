@@ -599,9 +599,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -418.19995}
-  m_SizeDelta: {x: -135.55084, y: -1067.6216}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -16, y: 61.80005}
+  m_SizeDelta: {x: -135.55084, y: -107.62158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849714768
 MonoBehaviour:
@@ -697,10 +697,10 @@ RectTransform:
   m_Father: {fileID: 1174526453}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 591}
-  m_SizeDelta: {x: 0, y: 104.04123}
+  m_AnchorMin: {x: 0, y: 0.7823543}
+  m_AnchorMax: {x: 1, y: 0.86083335}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024361961
 MonoBehaviour:
@@ -1765,12 +1765,12 @@ PrefabInstance:
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -271
+      value: -181
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160
+      value: -102
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ako si ben.
+  m_text: Ang lahat ay bumili ng pagkain.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2612,10 +2612,10 @@ RectTransform:
   m_Father: {fileID: 1174526453}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 281.7}
-  m_SizeDelta: {x: 0, y: 225.40158}
+  m_AnchorMin: {x: 0, y: 0.5915834}
+  m_AnchorMax: {x: 1, y: 0.7022708}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1958261178
 GameObject:

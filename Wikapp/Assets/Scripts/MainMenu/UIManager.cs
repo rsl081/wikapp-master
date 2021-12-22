@@ -112,9 +112,12 @@ public class UIManager : MonoBehaviour
     {
         int num = 0;
 
+       
         for(int i = 1; i <= 24; i++){
             num = num + PlayerPrefs.GetInt("Lv" + i);
         }
+        
+
 
         return num;
     }
@@ -123,33 +126,15 @@ public class UIManager : MonoBehaviour
     {
         int num = 0;
 
+    
         for(int i = 25; i <= 48; i++){
             num = num + PlayerPrefs.GetInt("Lv" + i);
         }
 
-        return num;
-    }
-    private int SecondGrade()
-    {
-        int num = 0;
-
-        for(int i = 49; i <= 72; i++){
-            num = num + PlayerPrefs.GetInt("Lv" + i);
-        }
 
         return num;
     }
-    private int ThirdGrade()
-    {
-        int num = 0;
-
-        for(int i = 73; i <= 96; i++)
-        {
-            num = num + PlayerPrefs.GetInt("Lv" + i);
-        }
-
-        return num;
-    }
+ 
 
     private void UpdateLockedStarUI()
     {
@@ -159,8 +144,8 @@ public class UIManager : MonoBehaviour
             //questStarsTexts[i].text = mapSelections[i].questNum.ToString();
             if (mapSelections[i].isUnlock == false)//If one of the Map is locked
             {
-                lockedStarsTexts[i].text = (mapSelections[i].endLevel * 1).ToString();
                 
+                lockedStarsTexts[i].text = (mapSelections[i].endLevel - 24).ToString();
                 
             }
         }
@@ -172,30 +157,11 @@ public class UIManager : MonoBehaviour
         for(int i = 0; i < mapSelections.Length; i++)
         {
             //Number of candies to unlock
-            unlockStarsTexts[i].text = candies.ToString() + "/" + mapSelections[i].endLevel * 1;
+           // unlockStarsTexts[i].text = candies.ToString() + "/" + mapSelections[i].endLevel * 1;
+            unlockStarsTexts[i].text = candies.ToString();
             
-        //     switch(i)
-        //     {
-        //         case 0://Kinder
-        //             unlockStarsTexts[i].text = (KinderGartenLevel()) + "/" +
-        //                 (mapSelections[i].endLevel - mapSelections[i].startLevel + 1) * 1;
-
-        //             break;
-        //         case 1://1st
-        //             unlockStarsTexts[i].text = (FirstGrade()) + "/" +
-        //                 (mapSelections[i].endLevel - mapSelections[i].startLevel + 1) * 1;
-
-        //             break;
-        //         case 2://2nd
-        //             unlockStarsTexts[i].text = (SecondGrade()) + "/" +
-        //                 (mapSelections[i].endLevel - mapSelections[i].startLevel + 1) * 1;
-        //             break;
-        //         case 3://3rd
-        //             unlockStarsTexts[i].text = (ThirdGrade()) + "/" +
-        //                 (mapSelections[i].endLevel - mapSelections[i].startLevel + 1) * 1;
-        //             break;
-        //     }
         }
+
     }
 
     //MARKER This method will be triggered when we press the (FOUR) level panel button
@@ -207,8 +173,6 @@ public class UIManager : MonoBehaviour
             audioSource.PlayOneShot(impactPop, 0.7f);
             fluidUI.AnimateUIBtn(gameObjectName);
 
-            // levelSelectionPanels[_mapIndex].gameObject.SetActive(true);
-            // mapSelectionPanel.gameObject.SetActive(false);
         }
         else
         {
@@ -217,7 +181,6 @@ public class UIManager : MonoBehaviour
             //Debug.Log("You cannot open this scene now. Please work hard to collect more candies");
         }
     }
-
 
     public void BackButton()
     {
@@ -310,4 +273,6 @@ public class UIManager : MonoBehaviour
         
 	}
     #endregion
+
+
 }
