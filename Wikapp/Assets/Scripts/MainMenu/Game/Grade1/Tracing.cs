@@ -16,6 +16,7 @@ public class Tracing : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     // Vector2 currentPosition;
     // bool stopTouch = false;
     bool isEndDragEnd = true;
+    List<Vector2> fingerPositions = new List<Vector2>();
 
     private void Start() {
         traceImge = GetComponent<Image>();
@@ -23,12 +24,12 @@ public class Tracing : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
         draggingObject = GetComponent<RectTransform>();
 
     }
-
+    
 
     public void OnDrag(PointerEventData eventData)
     {
         //! The best here is swipe
-        Debug.Log(traceImge.color);
+        
    
         if(traceImge.fillAmount != 1){
             isEndDragEnd = true;
@@ -36,12 +37,20 @@ public class Tracing : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
                 eventData.position, eventData.pressEventCamera, out var globalMousePosition))
             {
                     Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                    
+              
 
+                    Debug.Log($"Touch Position {touchPos - fingerPositions[fingerPositions.Count-1]}");
+                   // Debug.Log($"Finger Position {fingerPositions[fingerPositions.Count - 1]}");
+            
 
                     if(globalMousePosition.x == touchPos.x && globalMousePosition.y == touchPos.y
                     && Vector2.Distance(draggingObject.transform.position, touchPos) < howFar){
                         traceImge.fillAmount += amountToAdd;
                     }
+
+                 
             }
         }
         //Debug.Log("call");
@@ -50,6 +59,10 @@ public class Tracing : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Begin");
+        fingerPositions.Clear();
+        fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        
         //sEndDragEnd = false;
     }
 
