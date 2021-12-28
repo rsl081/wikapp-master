@@ -8,7 +8,7 @@ public class LineTracing : MonoBehaviour
     Vector3 starPos;
     Vector3 endPos;
     public Camera mycamera;
-    public Transform[] myRectTransformPos; 
+    //public Transform[] myRectTransformPos; 
     public int ctr = 0;
     public int nextImageTofillNum = 0;
     public int[] lenOfImg;
@@ -34,9 +34,9 @@ public class LineTracing : MonoBehaviour
         fillImage[0].fillAmount = 0;
 
         //lr = GetComponent<LineRenderer>();
-        Vector3 myTrans = Camera.main.ScreenToWorldPoint(myRectTransformPos[0].transform.position);
+        // Vector3 myTrans = Camera.main.ScreenToWorldPoint(myRectTransformPos[0].transform.position);
 
-        this.transform.position = myRectTransformPos[0].transform.position;
+        // this.transform.position = myRectTransformPos[0].transform.position;
     
             
       
