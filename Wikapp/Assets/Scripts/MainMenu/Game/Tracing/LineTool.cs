@@ -15,7 +15,7 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Click");
+        Debug.Log(this.gameObject.name);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -24,27 +24,15 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
 
         if(myParseInt == lineTracing.ctr)
         {
-            
-            // - lineTracing.lr.transform.position
-            // lineTracing.lr
-            //     .SetPosition(lineTracing.x, lineTracing
-            //         .myRectTransformPos[lineTracing.x].transform.position);
-                    
-
-            //  Vector3 endPos = lineTracing.lr.GetPosition(lineTracing.lr.positionCount - 1); 
             lineTracing.audioSource.PlayOneShot(lineTracing.traceSound, 0.7f);
             lineTracing.ctr++;
             lineTracing.fillImage[lineTracing.nextImageTofillNum].fillAmount += lineTracing.amountToAdd[lineTracing.nextImageTofillNum];
-            //Debug.Log(lineTracing.lenOfImg[lineTracing.nextImageTofillNum]);
+        
             if(lineTracing.ctr == lineTracing.lenOfImg[lineTracing.nextImageTofillNum])
             {
                 
-                //lineTracing.fillImage[lineTracing.nextImageTofillNum].fillAmount += lineTracing.amountToAdd[lineTracing.nextImageTofillNum];
-                
                 lineTracing.fillImage[lineTracing.nextImageTofillNum].fillAmount += lineTracing.amountToAdd[lineTracing.nextImageTofillNum];
                 lineTracing.nextImageTofillNum++;
-
-                //Debug.Log(lineTracing.fillImage.Length);
 
             }
 
