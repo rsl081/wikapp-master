@@ -999,14 +999,6 @@ MonoBehaviour:
   questions:
   - {fileID: 11400000, guid: 39517259cf6c129448cf658f9c9899e6, type: 2}
   - {fileID: 11400000, guid: 512fe4d6242fcc543af04ef49ed9d066, type: 2}
-  - {fileID: 11400000, guid: 9ece454d3dd183e4da8c86bea5e44f36, type: 2}
-  - {fileID: 11400000, guid: 5e4a191c9dcece644a193827baeea626, type: 2}
-  - {fileID: 11400000, guid: 723a1326059d443479919be4cdb3fc3e, type: 2}
-  - {fileID: 11400000, guid: b386ddd02c6accc4695c92d9eaa93292, type: 2}
-  - {fileID: 11400000, guid: bd8b83cd52734914ea2e73c6824e2c02, type: 2}
-  - {fileID: 11400000, guid: 54656c43f021b4d46a1bb0195a6e939c, type: 2}
-  - {fileID: 11400000, guid: 8cb42103fc93ad346ad540c12082af67, type: 2}
-  - {fileID: 11400000, guid: 484aa12de204db74eafe5cfc51965096, type: 2}
   progressBar: {fileID: 250740113}
   isComplete: 0
   lenOfTracing: 0
@@ -1247,6 +1239,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -104
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}

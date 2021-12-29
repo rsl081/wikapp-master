@@ -53,7 +53,7 @@ public class QuizNumberTracing : MonoBehaviour
             isComplete = true;
             ShowCompletion();
         }
-        else if(numberOfCorrectTrace == lenOfTracing-1){
+        else if(numberOfCorrectTrace == lenOfTracing){
             scoreKeeper.IncrementCorrectAnswer();
         }
         
@@ -92,8 +92,9 @@ public class QuizNumberTracing : MonoBehaviour
             letter.transform.SetParent(GameObject.FindGameObjectWithTag("QuizCanvas").transform, false);
 
             numberOfCorrectTrace = 0;
+
         }
-        lenOfTracing = currentQuestion.GetQuestion().GetComponentsInChildren<Image>().Length;
+        lenOfTracing = FindObjectOfType<LineTracing>().totalOfTracing;
         
     }
 
