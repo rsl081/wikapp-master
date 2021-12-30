@@ -28,6 +28,8 @@ public class LineTracing : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         
         mycamera = Camera.main;
+        
+        totalOfTracing = fillImage.Length;
 
         fillImage[0].fillAmount = 0;
 
