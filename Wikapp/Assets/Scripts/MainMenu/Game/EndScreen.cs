@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class EndScreen : MonoBehaviour
 {
@@ -13,16 +14,22 @@ public class EndScreen : MonoBehaviour
     ScoreKeeper scoreKeeper;
     public int levelIndex;
     Transition transition;
+    AudioSource source;
+    GameObject panelNumber;
+
     // Start is called before the first frame update
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         transition = FindObjectOfType<Transition>();
-        
+
+        panelNumber = GameObject.FindGameObjectWithTag("PanelNumber");        
     }
+    
 
     public void ShowFinalScore()
     {
+		panelNumber.transform.DOPunchScale(Vector3.one * 0.1f, 0.7f, 5, 0.6f).SetEase(Ease.OutCirc);                                                  
         finalScoreText.text = "Nakakuha ka\nng "
             + scoreKeeper.CalculateScore() + "%";
     }

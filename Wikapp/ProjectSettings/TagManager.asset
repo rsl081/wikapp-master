@@ -6,6 +6,7 @@ TagManager:
   tags:
   - QuizCanvas
   - Music
+  - PanelNumber
   layers:
   - Default
   - TransparentFX

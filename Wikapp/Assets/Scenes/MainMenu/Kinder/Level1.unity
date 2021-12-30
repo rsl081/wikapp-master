@@ -1268,6 +1268,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369652493}
   m_CullTransparentMesh: 0
+--- !u!1 &1379960389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3333899552186961737, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3333899552214926961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1391047501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +1942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2023338981973300010}
+  mainCanvas: {fileID: 0}
+  progressPanel: {fileID: 0}
 --- !u!1001 &2023338981973300009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2214,6 +2222,11 @@ PrefabInstance:
       propertyPath: m_IgnoreReversedGraphics
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3333899553694673449, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+        type: 3}
+      propertyPath: panelNumber
+      value: 
+      objectReference: {fileID: 1379960389}
     - target: {fileID: 3333899553694673450, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
       propertyPath: m_Camera
