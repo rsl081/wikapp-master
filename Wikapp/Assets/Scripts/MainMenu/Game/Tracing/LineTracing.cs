@@ -19,9 +19,7 @@ public class LineTracing : MonoBehaviour
 
     public float[] amountToAdd;
     public GameObject finger;
-
     public AudioSource audioSource;
-    public AudioClip traceSound;
 
     // Start is called before the first frame update
     void Start()
@@ -33,27 +31,6 @@ public class LineTracing : MonoBehaviour
 
         fillImage[0].fillAmount = 0;
 
-        //lr = GetComponent<LineRenderer>();
-        // Vector3 myTrans = Camera.main.ScreenToWorldPoint(myRectTransformPos[0].transform.position);
-
-        // this.transform.position = myRectTransformPos[0].transform.position;
-    
-            
-      
-        //lr.startWidth = 0.15f;
-
-        // for(int i = 0; i < myRectTransformPos.Length; i++)
-        // {
-
-        //     Instantiate(linePrefab, myRectTransformPos[i].transform.position, transform.rotation);
-            
-         
-
-
-        //     lineRenderer.SetPosition(i, myRectTransformPos[i].transform.position - lineRenderer.transform.position);
-
-
-        // }
 
     }
 }
