@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d575f51a1ea1889499579327d12581ad, type: 3}
   m_Name: Tracing Question 6
   m_EditorClassIdentifier: 
-  question: {fileID: 1674375156456017196, guid: 17edfaf3d58c1344e89165b5d9e08e04,
+  question: {fileID: 7334313057028188408, guid: 5ed5cb4082fb1d045b192445952131cd,
     type: 3}

@@ -26,6 +26,8 @@ public class QuizNumberTracing : MonoBehaviour
     public int numberOfCorrectTrace;
     GameObject letter;
 
+    
+
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
@@ -51,6 +53,7 @@ public class QuizNumberTracing : MonoBehaviour
         if(progressBar.value == progressBar.maxValue){
             scoreKeeper.IncrementCorrectAnswer();
             isComplete = true;
+            
             ShowCompletion();
         }
         else if(numberOfCorrectTrace == lenOfTracing){

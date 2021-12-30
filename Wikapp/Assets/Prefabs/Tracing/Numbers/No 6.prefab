@@ -1046,7 +1046,7 @@ MonoBehaviour:
   - 0.33
   finger: {fileID: 7334313057760098149}
   audioSource: {fileID: 0}
-  traceSound: {fileID: 8300000, guid: 688a6d76d95a8524ebd3f1ffacb05fc2, type: 3}
+  traceSound: {fileID: 8300000, guid: b046bb3b94d95d040989420e332a758e, type: 3}
 --- !u!1 &7334313056631691502
 GameObject:
   m_ObjectHideFlags: 0

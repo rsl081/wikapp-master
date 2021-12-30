@@ -336,7 +336,7 @@ MonoBehaviour:
   - 0.33
   finger: {fileID: 4214488361796096502}
   audioSource: {fileID: 0}
-  traceSound: {fileID: 8300000, guid: 688a6d76d95a8524ebd3f1ffacb05fc2, type: 3}
+  traceSound: {fileID: 8300000, guid: b046bb3b94d95d040989420e332a758e, type: 3}
 --- !u!1 &4214488360697055824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
