@@ -48,6 +48,25 @@ public class InfoGUI : MonoBehaviour
     
         init();
 
+        
+
+    }
+
+    private void Update() {
+        if(nameTmp.GetComponent<TMP_InputField>().isFocused)
+        {
+            nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Pangalan...";
+            nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().color = Color.white;
+            nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().alpha = 0.50f;
+        
+        }
+        if(ageTmp.GetComponent<TMP_InputField>().isFocused)
+        {
+            ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Edad...";
+            ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().color = Color.white;
+            ageTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().alpha = 0.50f;
+        
+        }
     }
 
     void init(){
@@ -154,6 +173,4 @@ public class InfoGUI : MonoBehaviour
         genderDropDown.ClearOptions();
         genderDropDown.AddOptions(genderList);
     }
-
-
 }
