@@ -878,7 +878,7 @@ MonoBehaviour:
   lenOfImg: 07000000
   fillImage:
   - {fileID: 80232087973002119}
-  totalOfTracing: 0
+  totalOfTracing: 1
   amountToAdd:
   - 0.14
   finger: {fileID: 80232088037911634}

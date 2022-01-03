@@ -35,7 +35,7 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
                 
                 lineTracing.fillImage[lineTracing.nextImageTofillNum].fillAmount += lineTracing.amountToAdd[lineTracing.nextImageTofillNum];
                 lineTracing.nextImageTofillNum++;
-                //FindObjectOfType<QuizNumberTracing>().numberOfCorrectTrace++;
+                FindObjectOfType<QuizNumberTracing>().numberOfCorrectTrace++;
 
             }
 
@@ -45,7 +45,7 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
         {
             lineTracing.finger.SetActive(false);
             Debug.Log("Goods ah");
-            //Invoke(nameof(DelayNextQuestion), 1f);
+            Invoke(nameof(DelayNextQuestion), 1f);
 
         }
             

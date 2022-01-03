@@ -1050,7 +1050,7 @@ MonoBehaviour:
   - {fileID: 5580706263605594867}
   - {fileID: 5580706263646403607}
   - {fileID: 2578343133422237521}
-  totalOfTracing: 0
+  totalOfTracing: 3
   amountToAdd:
   - 0.16
   - 0.2

@@ -866,7 +866,7 @@ MonoBehaviour:
   fillImage:
   - {fileID: 3734067297045872114}
   - {fileID: 3734067297076169494}
-  totalOfTracing: 0
+  totalOfTracing: 2
   amountToAdd:
   - 0.14
   - 0.25
