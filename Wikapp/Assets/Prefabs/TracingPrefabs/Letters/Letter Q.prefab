@@ -503,7 +503,7 @@ MonoBehaviour:
   - {fileID: 7322348748587834682}
   - {fileID: 7322348749870811227}
   - {fileID: 7322348748537701406}
-  totalOfTracing: 0
+  totalOfTracing: 5
   amountToAdd:
   - 0.25
   - 0.25

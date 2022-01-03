@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d575f51a1ea1889499579327d12581ad, type: 3}
   m_Name: Tracing Question 17
   m_EditorClassIdentifier: 
-  question: {fileID: 6142120191108208055, guid: 16937a183e86a554497ae3aa91466ca2,
-    type: 3}
+  question: {fileID: 802923625140933550, guid: bdfe0ca537e253442a752c64482b6c06, type: 3}

@@ -329,7 +329,7 @@ MonoBehaviour:
   - {fileID: 6569762089030867603}
   - {fileID: 6569762088549487907}
   - {fileID: 6569762088487455085}
-  totalOfTracing: 0
+  totalOfTracing: 5
   amountToAdd:
   - 0.25
   - 0.25

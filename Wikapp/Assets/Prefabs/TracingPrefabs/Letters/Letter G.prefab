@@ -1043,7 +1043,7 @@ MonoBehaviour:
   - {fileID: 7865628527960045015}
   - {fileID: 7865628527193049133}
   - {fileID: 7865628527319912321}
-  totalOfTracing: 0
+  totalOfTracing: 5
   amountToAdd:
   - 0.25
   - 0.25

@@ -1040,7 +1040,7 @@ MonoBehaviour:
   fillImage:
   - {fileID: 157764770960229247}
   - {fileID: 157764770862560667}
-  totalOfTracing: 0
+  totalOfTracing: 2
   amountToAdd:
   - 0.14
   - 0.14

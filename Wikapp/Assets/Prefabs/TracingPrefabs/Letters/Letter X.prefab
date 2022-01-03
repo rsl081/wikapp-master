@@ -500,7 +500,7 @@ MonoBehaviour:
   fillImage:
   - {fileID: 3821341299071996350}
   - {fileID: 3821341299039397722}
-  totalOfTracing: 0
+  totalOfTracing: 2
   amountToAdd:
   - 0.11
   - 0.12
@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 3821341299873077749}
   - component: {fileID: 3821341299873077751}
   m_Layer: 0
-  m_Name: X
+  m_Name: Letter X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
