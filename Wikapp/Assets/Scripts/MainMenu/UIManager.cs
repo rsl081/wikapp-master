@@ -69,31 +69,35 @@ public class UIManager : MonoBehaviour
         transition = FindObjectOfType<Transition>();
         fluidUI = FindObjectOfType<FluidUI>();
 
-        UpdateStarUI();
+        UpdateNameUI();
         UpdateLockedStarUI();
         UpdateUnLockedStarUI();
         
         EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
         //EventCenter.GetInstance().EventTrigger("DestroyGameMusic");
 
-        EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateStarUI);
+        EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateNameUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateLockedStarUI);
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateUnLockedStarUI);
 
     }
     private void OnDestroy()
     {
-        EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateStarUI);
+        EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateNameUI);
         EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateLockedStarUI);
         EventCenter.GetInstance().RemoveEventListener("PressStarButton", UpdateUnLockedStarUI);
      
     }
 
     //Update OUR Candies UI on the top left corner
-    private void UpdateStarUI()
+    private void UpdateNameUI()
     {
         candies = Levels();
-        candyText.text = candies.ToString();
+        // candyText.text = candies.ToString();
+
+        candyText.text = $"Hi! {Info.Instance.getPlayer()._name}";
+
+        //candyText.autoSizeTextContainer = true;
     }
 
     
