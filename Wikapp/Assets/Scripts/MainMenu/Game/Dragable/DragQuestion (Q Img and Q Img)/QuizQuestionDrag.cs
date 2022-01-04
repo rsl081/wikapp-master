@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 //! Responsible for UI such as dragImg, text, and quesHolder.
 public class QuizQuestionDrag : MonoBehaviour
@@ -32,43 +33,77 @@ public class QuizQuestionDrag : MonoBehaviour
     [SerializeField] bool isHoldingSomething;
     int index = -1;
 
+    
+    AudioSource source;
+    [SerializeField] AudioClip correctAnsSound;
+    [SerializeField] AudioClip wrongAnsSound;
+    [SerializeField] GameObject btnParticleEffect;
+
 
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
         DisplayQuestion();
 
+        
     }
 
     public void OnAnswerSelected(int index)
     {
+        
+        StartCoroutine(ShowCorrectAnswer());
         DisplayAnswer(index);
-        //SetButtonState(false);
-        GetNextQuestion();
+        //GetNextQuestion();
 
     }
 
     void DisplayAnswer(int index)
     {
-        //Image buttonImage;
         if(index == currentQuestion.GetCorrectAnswerIndex()){
-            //questionImage.sprite = questionSO.GetQuestion();
-            //Coorect Message 
-            // buttonImage = answerButton[index].GetComponent<Image>();
-            // buttonImage.sprite = correctAnswerSprite;
-            scoreKeeper.IncrementCorrectAnswer();
-        }else{
+            source.PlayOneShot(correctAnsSound, 0.7f);
+            Image btnText = answerImg[index].GetComponent<Image>();
 
-            // buttonImage = answerButton[correctAnswerIndex].GetComponent<Image>();
-            // buttonImage.sprite = correctAnswerSprite;
+            questionImage.transform.DOPunchPosition(transform.localPosition + 
+                                                            new Vector3(0f,-15f,0), 0.5f).Play();
+
+            Instantiate(btnParticleEffect, btnText.transform.position, Quaternion.identity);
+            scoreKeeper.IncrementCorrectAnswer();
+
+        }else{
+           source.PlayOneShot(wrongAnsSound, 0.7f);
+
+           Image btnText = answerImg[index].GetComponent<Image>();
+
+            questionImage.transform.DOPunchRotation(new Vector3(0f,0f,2f), 0.5f, 10).Play();
+            btnText.color = new Color32(244,73,34,255);
+            
         }
+    
+    }
+
+    IEnumerator ShowCorrectAnswer()
+    {
+
+        yield return new WaitForSeconds (1f);
         if(progressBar.value == progressBar.maxValue){
             isComplete = true;
             ShowCompletion();
         }
 
+    
+        for(int i = 0; i < answerImg.Length; i++)
+        {
+            Image button = answerImg[i].GetComponent<Image>();
+            button.color = Color.white;
+
+        }
+
+        
+        
+        GetNextQuestion();
     }
 
     void ShowCompletion()

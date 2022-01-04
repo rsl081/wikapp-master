@@ -356,7 +356,10 @@ MonoBehaviour:
   - 0.16
   finger: {fileID: 7978896039257540371}
   audioSource: {fileID: 0}
-  traceSound: {fileID: 8300000, guid: b046bb3b94d95d040989420e332a758e, type: 3}
+  correctVfx: {fileID: 3637350816302969253, guid: d4bc775cb37c97b418631eec4e4ad70e,
+    type: 3}
+  shakeGO: {fileID: 3183323197273075080}
+  doneTracingSound: {fileID: 8300000, guid: 45bc947026033f44495b7122b906557c, type: 3}
 --- !u!82 &7978896037719049862
 AudioSource:
   m_ObjectHideFlags: 0

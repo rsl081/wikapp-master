@@ -93,11 +93,8 @@ public class UIManager : MonoBehaviour
     private void UpdateNameUI()
     {
         candies = Levels();
-        // candyText.text = candies.ToString();
 
         candyText.text = $"Hi! {Info.Instance.getPlayer()._name}";
-
-        //candyText.autoSizeTextContainer = true;
     }
 
     
