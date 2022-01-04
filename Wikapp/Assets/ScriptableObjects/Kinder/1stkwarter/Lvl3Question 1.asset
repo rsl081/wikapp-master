@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Ilan taon ka na?
   answer:
-  - 3
   - 4
   - 5
-  correctAnswerIndex: 0
+  - 123
+  correctAnswerIndex: 2

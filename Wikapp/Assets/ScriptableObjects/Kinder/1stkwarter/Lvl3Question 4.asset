@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Anong taon ka ipinanganak?
   answer:
-  - 3
-  - 4
-  - 5
-  correctAnswerIndex: 0
+  - 2017
+  - 2019
+  - 2006
+  correctAnswerIndex: 2

@@ -1326,6 +1326,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
   - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
+  hideThisShit: {fileID: 0}
   _animateStr: KndrGameToHome
 --- !u!114 &3333899552554192261
 MonoBehaviour:
@@ -2339,7 +2340,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}

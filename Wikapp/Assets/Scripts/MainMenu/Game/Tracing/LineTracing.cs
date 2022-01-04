@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class LineTracing : MonoBehaviour
 {
@@ -20,7 +21,10 @@ public class LineTracing : MonoBehaviour
     public float[] amountToAdd;
     public GameObject finger;
     public AudioSource audioSource;
-
+    public GameObject correctVfx;
+    public GameObject shakeGO;
+    [SerializeField] AudioClip doneTracingSound;
+    bool playOnce;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +37,19 @@ public class LineTracing : MonoBehaviour
 
         fillImage[0].fillAmount = 0;
 
+        playOnce = true;
+        
+    }
 
+    public void ShakeObject()
+    {
+        if(playOnce)
+        {
+            audioSource.PlayOneShot(doneTracingSound, 0.7f);
+            shakeGO.transform.DOPunchPosition(shakeGO.transform.localPosition + 
+                                                new Vector3(0f,-15f,0), 0.5f).Play();
+            playOnce = false;
+        }
+        
     }
 }

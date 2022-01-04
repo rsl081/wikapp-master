@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class QuizQuestionImg : MonoBehaviour
 {
@@ -26,8 +27,14 @@ public class QuizQuestionImg : MonoBehaviour
     [SerializeField] Slider progressBar;
     public bool isComplete;
     int index = -1;
+
+    AudioSource source;
+    [SerializeField] AudioClip correctAnsSound;
+    [SerializeField] AudioClip wrongAnsSound;
+    [SerializeField] GameObject btnParticleEffect;
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
@@ -36,31 +43,66 @@ public class QuizQuestionImg : MonoBehaviour
 
     public void OnAnswerSelected(int index)
     {
+        StartCoroutine(ShowCorrectAnswer());
         DisplayAnswer(index);
         SetButtonState(false);
-        GetNextQuestion();
+   
 
     }
 
     void DisplayAnswer(int index)
     {
-        //Image buttonImage;
         if(index == currentQuestion.GetCorrectAnswerIndex()){
-            //questionImage.sprite = questionSO.GetQuestion();
-            //Coorect Message 
-            // buttonImage = answerButton[index].GetComponent<Image>();
-            // buttonImage.sprite = correctAnswerSprite;
-            scoreKeeper.IncrementCorrectAnswer();
-        }else{
+            source.PlayOneShot(correctAnsSound, 0.7f);
+            Image button = answerButton[index].GetComponent<Image>();
+            button.color = new Color32(34,244,38,255);
 
-            // buttonImage = answerButton[correctAnswerIndex].GetComponent<Image>();
-            // buttonImage.sprite = correctAnswerSprite;
+            button.transform.DOPunchPosition(transform.localPosition + 
+                                                            new Vector3(0f,-5f,0), 0.5f).Play();
+
+            Instantiate(btnParticleEffect, button.transform.position, Quaternion.identity);
+            scoreKeeper.IncrementCorrectAnswer();
+
+        }else{
+            source.PlayOneShot(wrongAnsSound, 0.7f);
+            Image warningBtn = answerButton[index].GetComponent<Image>();
+            warningBtn.color = new Color32(244,73,34,255);
+
+            warningBtn.transform.DOPunchRotation(new Vector3(0f,0f,2f), 0.5f, 10).Play();
+            
+
+            for(int i = 0; i < answerButton.Length; i++)
+            {
+                if(i == currentQuestion.GetCorrectAnswerIndex())
+                {
+                    Image button = answerButton[i].GetComponent<Image>();
+                    button.color = new Color32(34,244,38,255);
+             
+                }
+            }
+            
         }
+    
+    }
+
+
+    IEnumerator ShowCorrectAnswer()
+    {
+
+        yield return new WaitForSeconds (1f);
         if(progressBar.value == progressBar.maxValue){
             isComplete = true;
             ShowCompletion();
         }
 
+        for(int i = 0; i < answerButton.Length; i++)
+        {
+            Image button = answerButton[i].GetComponent<Image>();
+            button.color = Color.white;
+
+        }
+        
+        GetNextQuestion();
     }
 
     void ShowCompletion()

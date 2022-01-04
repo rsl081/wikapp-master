@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
 {
@@ -10,7 +11,7 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
     private void Start() {
         
         lineTracing = FindObjectOfType<LineTracing>();
-        
+       
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -27,6 +28,7 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
 
             //lineTracing.audioSource.PlayOneShot(lineTracing.traceSound, 0.7f);
             lineTracing.audioSource.PlayOneShot(lineTracing.audioSource.clip, 0.7f);
+            Instantiate(lineTracing.correctVfx, transform.position, Quaternion.identity);
             lineTracing.ctr++;
             lineTracing.fillImage[lineTracing.nextImageTofillNum].fillAmount += lineTracing.amountToAdd[lineTracing.nextImageTofillNum];
         
@@ -44,7 +46,8 @@ public class LineTool : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
         if(lineTracing.totalOfTracing == lineTracing.nextImageTofillNum)
         {
             lineTracing.finger.SetActive(false);
-            Debug.Log("Goods ah");
+            lineTracing.ShakeObject();
+           
             Invoke(nameof(DelayNextQuestion), 1f);
 
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
 {
@@ -40,7 +41,8 @@ public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
 
             if(quizQuestionDrag != null)
             {
-
+                // quizQuestionDrag.questionImage.transform.DOPunchPosition(quizQuestionDrag.transform.localPosition + 
+                //                                             new Vector3(0f,-5f,0), 0.5f).Play();
                 answer = int.Parse(this.gameObject.name);
                 for(int i = 0; i < quizQuestionDrag.answerImg.Length; i++){
                     Image btnText = quizQuestionDrag.answerImg[i].GetComponentInChildren<Image>();
@@ -48,8 +50,7 @@ public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
                         
                         btnText.gameObject.transform.position = quizQuestionDrag.questionImage.transform.position;
                         startDragging = false;
-                        Invoke(nameof(GoForAnswerQuizQuestionDrag), .5f);
-                        //startDragging = false;
+                        GoForAnswerQuizQuestionDrag();
                     }
 
                 }
@@ -81,31 +82,5 @@ public class MobileTouch : MonoBehaviour, IDragHandler, IEndDragHandler
         quizQuestionTextWithImage.OnAnswerSelected(answer);
         startDragging = true;
     }
-    // private void Update() {
 
-    //     if(startDragging){
-    //         Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    //         transform.position = new Vector2(touchPos.x, touchPos.y);
-    //     }
-
-    // }
-
-    // public override void OnPointerDown(PointerEventData data)
-    // {
-    //     startDragging = true;
-    // }
-    // public override void OnPointerUp(PointerEventData data)
-    // {
-    //     startDragging = false;
-    //     if(this.gameObject.activeSelf){
-    //         int answer = int.Parse(this.gameObject.name);
-    //         for(int i = 0; i < quizQuestionDrag.answerImg.Length; i++){
-    //             Image btnText = quizQuestionDrag.answerImg[i].GetComponentInChildren<Image>();
-    //             if(Vector2.Distance(btnText.gameObject.transform.position, FindObjectOfType<QuizQuestionDrag>().questionImage.transform.position) < 3){
-    //                 quizQuestionDrag.OnAnswerSelected(answer);
-    //             }
-
-    //         }
-    //     }
-    // }
 }
