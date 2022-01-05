@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Linq;
+using DG.Tweening;
 
 public class WordEscapeGameManager : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class WordEscapeGameManager : MonoBehaviour
 
     public bool isComplete;
     private ScoreKeeper scoreKeeper;
+    AudioSource source;
+    [SerializeField] AudioClip correctBtn;
+    [SerializeField] AudioClip letterSound;
+    [SerializeField] AudioClip backSound;
+    [SerializeField] GameObject awesomeVfx;
     private void Awake()
     {
         if (instance == null)
@@ -39,6 +45,8 @@ public class WordEscapeGameManager : MonoBehaviour
     void Start()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+
+        source = GetComponent<AudioSource>();
 
         gameSlider.maxValue = questionDataScriptable.questions.Count;
         gameSlider.value = 1; //set slider value to 1
@@ -73,7 +81,9 @@ public class WordEscapeGameManager : MonoBehaviour
         for (int j = answerWord.Length; j < wordsArray.Length; j++)
         {
             wordsArray[j] = (char)UnityEngine.Random.Range(65, 90);
+
         }
+
 
         wordsArray = ShuffleList.ShuffleListItems<char>(wordsArray.ToList()).ToArray(); //Randomly Shuffle the words array
 
@@ -116,12 +126,15 @@ public class WordEscapeGameManager : MonoBehaviour
     /// <param name="value"></param>
     public void SelectedOption(WordData value)
     {
+        source.PlayOneShot(letterSound, 0.7f);
+
         //if gameStatus is next or currentAnswerIndex is more or equal to answerWord length
         if (gameStatus == GameStatus.Next || currentAnswerIndex >= answerWord.Length) return;
 
         selectedWordsIndex.Add(value.transform.GetSiblingIndex()); //add the child index to selectedWordsIndex list
         value.gameObject.SetActive(false); //deactivate options object
         answerWordList[currentAnswerIndex].SetWord(value.wordValue); //set the answer word list
+        Instantiate(awesomeVfx, answerWordList[currentAnswerIndex].transform.position, Quaternion.identity);
 
         currentAnswerIndex++;   //increase currentAnswerIndex
 
@@ -140,6 +153,8 @@ public class WordEscapeGameManager : MonoBehaviour
                 }
             }
 
+ 
+
             //if correctAnswer is true
             if (correctAnswer)
             {
@@ -155,16 +170,29 @@ public class WordEscapeGameManager : MonoBehaviour
                 //if currentQuestionIndex is less that total available questions
                 if (currentQuestionIndex < questionDataScriptable.questions.Count)
                 {
-                    Invoke("SetQuestion", 0.5f); //go to next question
+                    source.PlayOneShot(correctBtn, 0.7f);
+                    //loop through answerWordList
+                    for (int i = 0; i < answerWord.Length; i++)
+                    {
+                        answerWordList[i].transform.DOPunchPosition(transform.localPosition + 
+                                    new Vector3(0f,-5f,0), 0.5f).Play();
+                    }
+                    
+                    Invoke("SetQuestion", 1f); //go to next question
                 }
                 else
                 {
                     scoreKeeper.IncrementCorrectAnswer();
-                    Debug.Log("Game Complete"); //else game is complete
-                    //gameComplete.SetActive(true);
-                    quizCanvas.SetActive(false);
-                    isComplete = true;  
-                    ShowCompletion();
+
+                    source.PlayOneShot(correctBtn, 0.7f);
+                  
+                    for (int i = 0; i < answerWord.Length; i++)
+                    {
+                        answerWordList[i].transform.DOPunchPosition(transform.localPosition + 
+                                    new Vector3(0f,-5f,0), 0.5f).Play();
+                    }
+                  
+                    Invoke(nameof(ShowCompletion), 1f);
                 }
             }
         }
@@ -172,14 +200,18 @@ public class WordEscapeGameManager : MonoBehaviour
 
     void ShowCompletion()
     {
+        quizCanvas.SetActive(false);
+        isComplete = true;
         EventCenter.GetInstance().EventTrigger("UpdateScorePercent");
     }
 
 
     public void ResetLastWord()
     {
+
         if (selectedWordsIndex.Count > 0)
         {
+            source.PlayOneShot(backSound, 0.7f);
             int index = selectedWordsIndex[selectedWordsIndex.Count - 1];
             optionsWordList[index].gameObject.SetActive(true);
             selectedWordsIndex.RemoveAt(selectedWordsIndex.Count - 1);

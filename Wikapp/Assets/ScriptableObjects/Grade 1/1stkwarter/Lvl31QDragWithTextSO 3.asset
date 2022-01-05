@@ -15,7 +15,7 @@ MonoBehaviour:
   source: []
   question: {fileID: 21300000, guid: a65d1e90c8bc2614292f39c716f9bfa6, type: 3}
   questionWithHolder: {fileID: 21300000, guid: 1af42b1d6de11504395ddfcbf889449d, type: 3}
-  questionStr: bahay-
+  questionStr: balat-
   answer:
   - kamay
   - sibuyas
@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8565549a569aa1d459b370faa0f8257c, type: 3}
   - {fileID: 21300000, guid: 5525a42a54a69b743a3c985035886020, type: 3}
   - {fileID: 21300000, guid: 95bd37c802cd3aa4788eb06992209fec, type: 3}
-  correctAnswerIndex: 2
+  correctAnswerIndex: 1
