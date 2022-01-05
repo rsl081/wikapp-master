@@ -97,6 +97,7 @@ public class QuizQuestionImg : MonoBehaviour
 
         for(int i = 0; i < answerButton.Length; i++)
         {
+            
             Image button = answerButton[i].GetComponent<Image>();
             button.color = Color.white;
 
@@ -164,16 +165,5 @@ public class QuizQuestionImg : MonoBehaviour
             button.interactable = state;
         }
     }
-
-    // void SetDefaultButtonSprite()
-    // {
-    //     Image buttonImage;
-    //     for(int i = 0; i < answerButton.Length; i++){
-
-    //         buttonImage = answerButton[correctAnswerIndex].GetComponent<Image>();
-    //         buttonImage.sprite = defaultAnswerSprite;
-        
-    //     }
-    // }
 
 }
