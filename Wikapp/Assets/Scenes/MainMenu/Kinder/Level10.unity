@@ -564,12 +564,12 @@ PrefabInstance:
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -271
+      value: -188
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716240, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160
+      value: -108
       objectReference: {fileID: 0}
     - target: {fileID: 4728292982454716243, guid: 413edc74419daf244a532ac0834aaa42,
         type: 3}
@@ -837,8 +837,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ito ba ang tamang pagbati?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
+  m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2367,7 +2368,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 136
+    m_Top: 294
     m_Bottom: 105
   m_ChildAlignment: 4
   m_Spacing: 23.7
@@ -2845,8 +2846,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pusa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
+  m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3577,8 +3579,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pusa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
+  m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3742,7 +3745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 333.48}
+  m_AnchoredPosition: {x: 0, y: 207}
   m_SizeDelta: {x: 100, y: 94.02234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6913167849028233209

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class QuizQuestionTextWithImage : MonoBehaviour
 {
@@ -32,8 +33,14 @@ public class QuizQuestionTextWithImage : MonoBehaviour
     int index = -1;
     [SerializeField] bool dragabble;
 
+    AudioSource source;
+    [SerializeField] AudioClip correctAnsSound;
+    [SerializeField] AudioClip wrongAnsSound;
+    [SerializeField] GameObject btnParticleEffect;
+
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 1;
@@ -43,42 +50,76 @@ public class QuizQuestionTextWithImage : MonoBehaviour
 
     public void OnAnswerSelected(int index)
     {
+        StartCoroutine(ShowCorrectAnswer());
         DisplayAnswer(index);
-        //SetButtonState(false);
-        GetNextQuestion();
+        SetButtonState(false);
 
     }
 
     void DisplayAnswer(int index)
     {
-        //Image buttonImage;
         if(index == currentQuestion.GetCorrectAnswerIndex()){
-            //questionImage.sprite = questionSO.GetQuestion();
-            //Coorect Message 
-            // buttonImage = answerButton[index].GetComponent<Image>();
-            // buttonImage.sprite = correctAnswerSprite;
+            source.PlayOneShot(correctAnsSound, 0.7f);
+            Image button = answerImg[index].GetComponent<Image>();
+            button.color = new Color32(34,244,38,255);
+
+            button.transform.DOPunchPosition(transform.localPosition + 
+                                                            new Vector3(0f,-5f,0), 0.5f).Play();
+
+            Instantiate(btnParticleEffect, button.transform.position, Quaternion.identity);
             scoreKeeper.IncrementCorrectAnswer();
+
         }else{
+            source.PlayOneShot(wrongAnsSound, 0.7f);
+            Image warningBtn = answerImg[index].GetComponent<Image>();
+            warningBtn.color = new Color32(244,73,34,255);
 
-            // buttonImage = answerButton[correctAnswerIndex].GetComponent<Image>();
-            // buttonImage.sprite = correctAnswerSprite;
-        }
-        if(progressBar.value == progressBar.maxValue){
-            isComplete = true;
-            ShowCompletion();
-        }
+            warningBtn.transform.DOPunchRotation(new Vector3(0f,0f,2f), 0.5f, 10).Play();
+            
 
-    }
+            for(int i = 0; i < answerImg.Length; i++)
+            {
+                if(i == currentQuestion.GetCorrectAnswerIndex())
+                {
+                    Image button = answerImg[i].GetComponent<Image>();
+                    button.color = new Color32(34,244,38,255);
+             
+                }
+            }
+            
+        }
+    
+    }//end of DisplayAnswer
 
     void ShowCompletion()
     {
         EventCenter.GetInstance().EventTrigger("UpdateScorePercent");
     }
 
+    IEnumerator ShowCorrectAnswer()
+    {
+
+        yield return new WaitForSeconds (1f);
+        if(progressBar.value == progressBar.maxValue){
+            isComplete = true;
+            ShowCompletion();
+        }
+
+        for(int i = 0; i < answerImg.Length; i++)
+        {
+            
+            Image button = answerImg[i].GetComponent<Image>();
+            button.color = Color.white;
+
+        }
+        
+        GetNextQuestion();
+    }
+
     void GetNextQuestion()
     {
         if(questions.Count > 0){
-            //SetButtonState(true);
+            SetButtonState(true);
             //SetDefaultButtonSprite();
             //GetRandomQuestion();
             DisplayQuestion();
@@ -135,12 +176,13 @@ public class QuizQuestionTextWithImage : MonoBehaviour
     }
 
 
-    // void SetButtonState(bool state)
-    // {
-    //     for(int i = 0; i < answerImg.Length; i++)
-    //     {
-    //         Image button = answerImg[i].GetComponent<Image>();
-    //         button.interactable = state;
-    //     }
-    // }
+    void SetButtonState(bool state)
+    {
+        for(int i = 0; i < answerImg.Length; i++)
+        {
+            Button button = answerImg[i].GetComponent<Button>();
+            button.interactable = state;
+        }
+    }
+
 }

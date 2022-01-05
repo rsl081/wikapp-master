@@ -27,7 +27,6 @@ public class QuizQuestionImg : MonoBehaviour
     [SerializeField] Slider progressBar;
     public bool isComplete;
     int index = -1;
-
     AudioSource source;
     [SerializeField] AudioClip correctAnsSound;
     [SerializeField] AudioClip wrongAnsSound;
