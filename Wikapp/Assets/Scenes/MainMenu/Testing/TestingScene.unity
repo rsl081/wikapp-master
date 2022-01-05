@@ -558,7 +558,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.06
-      minScalar: 0.05
+      minScalar: 0.34
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5173,6 +5173,9 @@ MonoBehaviour:
   amountToAdd: []
   finger: {fileID: 0}
   audioSource: {fileID: 0}
+  correctVfx: {fileID: 0}
+  shakeGO: {fileID: 0}
+  doneTracingSound: {fileID: 0}
 --- !u!1001 &1343337970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7151,6 +7154,9 @@ MonoBehaviour:
   - 0.2
   finger: {fileID: 8975883521462024737}
   audioSource: {fileID: 0}
+  correctVfx: {fileID: 0}
+  shakeGO: {fileID: 0}
+  doneTracingSound: {fileID: 0}
 --- !u!224 &8975883521859337146
 RectTransform:
   m_ObjectHideFlags: 0

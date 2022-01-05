@@ -31,6 +31,12 @@ public class ColoringGameManager : MonoBehaviour
     }
     void UpdateScore()
     {
+        Invoke(nameof(DelayUpdatingScore), 1f);
+    }
+
+    void DelayUpdatingScore()
+    {
+
         if(paintBucket.isComplete)
         {
             paintBucket.gameObject.SetActive(false);
