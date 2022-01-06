@@ -639,7 +639,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532481185}
   m_CullTransparentMesh: 0
---- !u!1 &618506150
+--- !u!1 &576131279
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -647,9 +647,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 618506153}
-  - component: {fileID: 618506152}
-  - component: {fileID: 618506151}
+  - component: {fileID: 576131282}
+  - component: {fileID: 576131281}
+  - component: {fileID: 576131280}
   m_Layer: 5
   m_Name: Question Text (TMP)
   m_TagString: Untagged
@@ -657,13 +657,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &618506151
+--- !u!114 &576131280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618506150}
+  m_GameObject: {fileID: 576131279}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tiyak na ngalan
+  m_text: Ano ang kanyang hawak?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -704,8 +704,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 100.75
+  m_fontSizeBase: 100.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -746,32 +746,32 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &618506152
+--- !u!222 &576131281
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618506150}
+  m_GameObject: {fileID: 576131279}
   m_CullTransparentMesh: 0
---- !u!224 &618506153
+--- !u!224 &576131282
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618506150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 576131279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.8844953, y: 6.8844953, z: 6.8844953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 859910078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.785}
-  m_AnchorMax: {x: 0.5, y: 0.785}
-  m_AnchoredPosition: {x: -3.1, y: 2.4000244}
-  m_SizeDelta: {x: 133.444, y: 33.430847}
+  m_AnchorMin: {x: 0.07585185, y: 0.71279174}
+  m_AnchorMax: {x: 0.91825926, y: 0.88529164}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &789521031
 GameObject:
@@ -948,7 +948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionImageHolder: {fileID: 789521032}
   questionImage: {fileID: 0}
-  questionText: {fileID: 618506151}
+  questionText: {fileID: 576131280}
   questions:
   - {fileID: 11400000, guid: 4b76173749ac19641a08dc44dcc4ee25, type: 2}
   - {fileID: 11400000, guid: e0b09a1bba7a32840b6923e6f47e2be1, type: 2}
@@ -1039,7 +1039,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 618506153}
+  - {fileID: 576131282}
   - {fileID: 789521034}
   - {fileID: 1376894392}
   - {fileID: 1167355905}
@@ -1598,7 +1598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: 61.799927}
+  m_AnchoredPosition: {x: -16, y: 61.799805}
   m_SizeDelta: {x: -135.55084, y: -107.62158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376894393

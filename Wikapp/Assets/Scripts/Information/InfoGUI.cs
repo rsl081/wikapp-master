@@ -37,10 +37,10 @@ public class InfoGUI : MonoBehaviour
         "2011", "2010", "2009",
         "2008", "2007", "2006"
     };
-    List<string> genderList = new List<string> { 
-        "Kasarian...",
-        "Lalake", "Babae",
-    };
+    // List<string> genderList = new List<string> { 
+    //     "Kasarian...",
+    //     "Lalake", "Babae",
+    // };
     [SerializeField]TMP_FontAsset nougatFont;
     Transition transition;
 
@@ -55,7 +55,7 @@ public class InfoGUI : MonoBehaviour
     private void Update() {
         if(nameTmp.GetComponent<TMP_InputField>().isFocused)
         {
-            nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Pangalan...";
+            nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().text = "Palayaw...";
             nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().color = Color.white;
             nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().alpha = 0.50f;
         
@@ -76,7 +76,7 @@ public class InfoGUI : MonoBehaviour
         populateToDropDownMonth();
         populateToDropDownDay();
         populateToDropDownYear();
-        populateToDropDownGender();
+        //populateToDropDownGender();
 
     }
 
@@ -111,7 +111,7 @@ public class InfoGUI : MonoBehaviour
     bool CheckField(string name, string age, string month, string day,
                     string year, string gender){
         if(name == "" || age == "" || month == "Buwan..." || day == "Araw..."||
-            year == "Year..." || gender == "Kasarian..."){
+            year == "Year..."){
             if(name == ""){
                 nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().font = nougatFont;
                 nameTmp.GetComponent<TMP_InputField>().placeholder.GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
@@ -142,11 +142,11 @@ public class InfoGUI : MonoBehaviour
                                                             new Vector3(0f,-5f,0), 0.5f).Play();
 
             }
-            if(gender == "Kasarian..."){
+            // if(gender == "Kasarian..."){
 
-                genderDropDown.transform.DOPunchPosition(transform.localPosition + 
-                                                            new Vector3(0f,-5f,0), 0.5f).Play();
-            }
+            //     genderDropDown.transform.DOPunchPosition(transform.localPosition + 
+            //                                                 new Vector3(0f,-5f,0), 0.5f).Play();
+            // }
 
             return false;
         }
@@ -168,9 +168,9 @@ public class InfoGUI : MonoBehaviour
         yearDropDown.ClearOptions();
         yearDropDown.AddOptions(yearList);
     }
-    public void populateToDropDownGender()
-    {
-        genderDropDown.ClearOptions();
-        genderDropDown.AddOptions(genderList);
-    }
+    // public void populateToDropDownGender()
+    // {
+    //     genderDropDown.ClearOptions();
+    //     genderDropDown.AddOptions(genderList);
+    // }
 }

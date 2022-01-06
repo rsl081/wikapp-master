@@ -114,7 +114,6 @@ GameObject:
   - component: {fileID: 3333899552186961736}
   - component: {fileID: 3333899552186961741}
   - component: {fileID: 3333899552186961738}
-  - component: {fileID: 3333899552186961739}
   - component: {fileID: 3333899552186961740}
   m_Layer: 5
   m_Name: 1
@@ -181,29 +180,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &3333899552186961739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333899552186961737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1c0c8a8ec53e24b8c74a98bd189cff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isUnlocked: 1
-  starsImages:
-  - {fileID: 3333899553309200246}
-  - {fileID: 3333899552258715446}
-  - {fileID: 3333899552394773180}
-  starsSprites:
-  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
-  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
-  - {fileID: 21300000, guid: db11416090dcc0545adb5d42dc2b1196, type: 3}
-  hideThisShit: {fileID: 0}
-  _animateStr: KndrGameToHome
 --- !u!114 &3333899552186961740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +223,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3333899552186961739}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneTransition
         m_Mode: 5
         m_Arguments:
