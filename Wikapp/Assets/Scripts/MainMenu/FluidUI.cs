@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class FluidUI : MonoBehaviour
 {
-    public RectTransform mainPanel, setting, kinder, grade1, backPanelHome;
+    public RectTransform mainPanel, setting, kinder, grade1, backPanelHome, howToPlay;
     //public RectTransform mainPanel, setting, kinder, grade1, grade2, grade3;
 
     public void AnimateUIBtn(string value)
@@ -26,10 +26,17 @@ public class FluidUI : MonoBehaviour
                 MoveUI(mainPanel, new Vector2(-1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(kinder, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
                 break;
+
             case "Grade1":
                 MoveUI(mainPanel, new Vector2(-1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(grade1, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
                 break;
+
+            case "HowToPlay":
+                MoveUI(mainPanel, new Vector2(-1128, 0), 0.25f, 0f, Ease.OutFlash);
+                MoveUI(howToPlay, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
+                break;
+
             case "Settings":
                 MoveUI(mainPanel, new Vector2(-1108, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(setting, new Vector2(0, 0), 0.25f, 0.25f, Ease.OutFlash);
@@ -40,6 +47,10 @@ public class FluidUI : MonoBehaviour
                 break;
             case "Grade1HomeBtn":
                 MoveUI(grade1, new Vector2(1128, 0), 0.25f, 0f, Ease.OutFlash);
+                MoveUI(mainPanel, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
+                break;
+            case "HoToPlayToHome":
+                MoveUI(howToPlay, new Vector2(1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(mainPanel, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
                 break;
 
@@ -58,6 +69,8 @@ public class FluidUI : MonoBehaviour
                 MoveUI(grade1, new Vector2(1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(null, new Vector2(0, 0), 0.25f, 0.25f, Ease.OutFlash);
                 break;
+
+        
         }
     }
 

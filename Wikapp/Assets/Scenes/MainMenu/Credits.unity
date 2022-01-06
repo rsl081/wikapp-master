@@ -702,12 +702,67 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b><color=#ffa500ff><size=120>Notes</size></color></b>\nMay mga lalagay
-    p ako dito na credits wag nyo muna pansinin to. Salamat nga pala sa inyo.\n\n<b><color=#ffa500ff><size=120>Programmer</size></color></b>\nJohn
-    Doe\nJohn Russel D. Rodriguez\n\n\n<b><color=#ffa500ff><size=120>Animator</size></color></b>\n\nKurt
-    Donald Felipe\nAngela Mae Dela Cruz\nHarold Cuachin\nNeptalie A. Yambot\nJake
-    Larrence Lorenzo\n\n<b><color=#ffa500ff><size=120>Thank You</size></color></b>\n\nSalamat
-    sa lahat ng \ntaong tumulong sakin\n\n"
+  m_text: '<b><color=#ffa500ff><size=120>Gameplay Programmer</size></color></b>
+
+    John
+    Russel D. Rodriguez
+
+
+    <b><color=#ffa500ff><size=120>Lead Artist</size></color></b>
+
+    Kurt
+    Donald Felipe
+
+
+    <b><color=#ffa500ff><size=120>Junior Artist</size></color></b>
+
+    Harold
+    Cuachin
+
+    Neptalie A. Yambot
+
+
+    <b><color=#ffa500ff><size=120>Scrum Master</size></color></b>
+
+    Angela
+    Mae Dela Cruz
+
+
+    <b><color=#ffa500ff><size=120>QA Tester</size></color></b>
+
+    Jake
+    Larrence Lorenzo
+
+    Harold Cuachin
+
+    Neptalie A. Yambot
+
+
+
+    <b><color=#ffa500ff><size=120>Special
+    Thanks!</size></color></b>
+
+
+    Khian Del Poso
+
+    Nico Rodriguez
+
+    Kirby
+    Del Poso
+
+    Mark France
+
+    Luisa Rodriguez
+
+    comigo.itch.io
+
+    MobStudios
+
+    Cofofo
+    Music
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
