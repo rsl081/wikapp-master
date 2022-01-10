@@ -95,7 +95,7 @@ public class UIManager : MonoBehaviour
     {
         candies = Levels();
 
-        candyText.text = $"Hi! {Info.Instance.getPlayer()._name}";
+        candyText.text = $"Kamusta,\n{Info.Instance.getPlayer()._name}";
     }
 
     

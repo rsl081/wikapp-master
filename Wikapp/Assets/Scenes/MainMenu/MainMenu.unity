@@ -2724,7 +2724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CREDITS
+  m_text: KREDITO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -6160,7 +6160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PAANO LARUIN
+  m_text: TUNGKOL SA LARO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -11715,8 +11715,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -167.3, y: -63}
-  m_SizeDelta: {x: 223.07327, y: 55.76832}
+  m_AnchoredPosition: {x: -167, y: -74.7}
+  m_SizeDelta: {x: 273.21616, y: 79.16839}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697068258
 MonoBehaviour:
@@ -11737,7 +11737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Grade1
+  m_text: Baitang1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -22064,10 +22064,10 @@ RectTransform:
   m_Father: {fileID: 2114332748}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.057444442, y: 0.7136667}
-  m_AnchorMax: {x: 0.9418519, y: 0.836}
-  m_AnchoredPosition: {x: 0.5, y: 0.5}
-  m_SizeDelta: {x: -1.8588867, y: 0.3770752}
+  m_AnchorMin: {x: 0.057444442, y: 0.674875}
+  m_AnchorMax: {x: 0.93900007, y: 0.836}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240249805
 MonoBehaviour:
@@ -35883,10 +35883,10 @@ RectTransform:
   m_Father: {fileID: 1240249804}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000014305115}
-  m_SizeDelta: {x: -84.801056, y: 122.357285}
+  m_AnchorMin: {x: 0.07774835, y: 0.128}
+  m_AnchorMax: {x: 0.929, y: 0.89116246}
+  m_AnchoredPosition: {x: 2.5, y: 0.30000305}
+  m_SizeDelta: {x: 1.3722534, y: 3.3104553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1990213276
 MonoBehaviour:
@@ -35907,7 +35907,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hi! Johnrassasd
+  m_text: 'Kamusta,
+
+    John Doedasdasdasdadsad'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -37346,7 +37348,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Sundin ang panuto sa bawat laro. Mabuting gabayan ng magulang ang anak
-    sa paglalaro. Kumuha ng mga bituin upang mabuksan ang kabilang level.
+    sa paglalaro. Kumuha ng mga bituin upang mabuksan ang kabilang baitang.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
