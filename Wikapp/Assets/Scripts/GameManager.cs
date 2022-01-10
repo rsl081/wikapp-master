@@ -43,9 +43,10 @@ public class GameManager : MonoBehaviour
   
 
     public void OnReplayLevel()
-    {
+    { 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
     public void BackToHome()
     {
         endScreen.PressCandiesBackHome();

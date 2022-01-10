@@ -32,7 +32,7 @@ public class QuizEdad : MonoBehaviour
 
     
     List<string> monthsToChooseFrom = new List<string>(new string[]{
-        "March","April","May"
+        "Marso","Abril","Mayo"
         });
 
     //Todo make this year connected to the dropdown in InfGui
@@ -179,7 +179,7 @@ public class QuizEdad : MonoBehaviour
     IEnumerator ShowCorrectAnswer()
     {
 
-        yield return new WaitForSeconds (1f);
+        yield return new WaitForSeconds (1.5f);
         if(progressBar.value == progressBar.maxValue){
             isComplete = true;
             ShowCompletion();

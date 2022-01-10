@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0060f141f0a0900479c55d8afa371153, type: 3}
   m_Name: Instruction 0
   m_EditorClassIdentifier: 
-  tutsText: Ang wikapp ay isang edutainment mobile game na kung saan ang mag-aaral
-    ay magkakaroon ng kaalaman tungkol sa MTB-MLE alinsunod sa MELC na itinakda ng
-    DEPED sa interaktibong at kawiling-wiling pamamaraan ng pag lalaro habang nag
-    aaral
+  tutsText: Ang Learning is Fun ay isang edutainment mobile game na kung saan ang
+    mag-aaral ay magkakaroon ng kaalaman tungkol sa MTB-MLE alinsunod sa MELC na
+    itinakda ng DEPED sa interaktibong at kawiling-wiling pamamaraan ng pag lalaro
+    habang nag aaral

@@ -409,8 +409,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pusa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
+  m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -708,8 +709,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pusa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
+  m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2106,6 +2108,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562317144}
   m_CullTransparentMesh: 0
+--- !u!1001 &1562346215
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633884, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266220345744633886, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+        type: 3}
+      propertyPath: m_Name
+      value: AdManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a8bacbd3ef6c23438657cef4935ff95, type: 3}
+--- !u!114 &1562346216 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1266220345744633887, guid: 2a8bacbd3ef6c23438657cef4935ff95,
+    type: 3}
+  m_PrefabInstance: {fileID: 1562346215}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865482909ac8e1f439530df18c70ba72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1640501633
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,8 +2247,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pusa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
+  m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2364,9 +2448,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3333899553210298908, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3333899553210298908, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1562346216}
+    - target: {fileID: 3333899553210298908, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowAd
+      objectReference: {fileID: 0}
+    - target: {fileID: 3333899553210298908, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
       objectReference: {fileID: 2068474645}
+    - target: {fileID: 3333899553210298908, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3333899553210298909, guid: 6ed5ce64a4b8b204c9d198b4f152b52f,
         type: 3}
       propertyPath: m_AnchorMax.y
