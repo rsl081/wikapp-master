@@ -15,10 +15,10 @@ public class InfoGUI : MonoBehaviour
     [SerializeField]public TMP_Dropdown genderDropDown;
     List<string> montList = new List<string> { 
         "Buwan...",
-        "January", "February", "March",
-        "April", "May", "June",
-        "July", "August", "September",
-        "October", "November", "December"
+        "Enero", "Pebrero", "Marso",
+        "Abril", "Mayo", "Hunyo",
+        "Hulyo", "Agosto", "Setyembre",
+        "Oktubre", "Nobyembre", "Disyembre"
     };
 
     List<string> dayList = new List<string>() {
