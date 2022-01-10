@@ -99,7 +99,7 @@ public class QuizQuestionTextWithImage : MonoBehaviour
     IEnumerator ShowCorrectAnswer()
     {
 
-        yield return new WaitForSeconds (1f);
+        yield return new WaitForSeconds (1.5f);
         if(progressBar.value == progressBar.maxValue){
             isComplete = true;
             ShowCompletion();

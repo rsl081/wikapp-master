@@ -17,6 +17,8 @@ public class EndScreen : MonoBehaviour
     AudioSource source;
     GameObject panelNumber;
 
+    int indexStar;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -40,15 +42,18 @@ public class EndScreen : MonoBehaviour
         if(scoreKeeper.CalculateScore() >= 90){ 
 
             ShowCalculatedStar(3);
+            indexStar = 3;
             StarFrameGUI();
         }else if(scoreKeeper.CalculateScore() >= 50){
             
             ShowCalculatedStar(2);
+            indexStar = 2;
             StarFrameGUI();
 
         }else if(scoreKeeper.CalculateScore() >= 30){
             
             ShowCalculatedStar(1);
+            indexStar = 1;
             StarFrameGUI();
 
         }else{
@@ -95,10 +100,13 @@ public class EndScreen : MonoBehaviour
             starsImages[i].gameObject.SetActive(true);
         }
 
-        for(int i = 0; i < scoreKeeper.GetCorrectAnswers(); i++)
+        for(int i = 0; i < indexStar; i++)
         {
+            
             starsImages[i].sprite = starsSprites[i];
         }
+
+    
   
     }
 
