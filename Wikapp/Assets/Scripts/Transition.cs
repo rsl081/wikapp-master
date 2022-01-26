@@ -17,13 +17,21 @@ public class Transition : MonoBehaviour
             EventCenter.GetInstance().EventTrigger("PressStarButton");
             EventCenter.GetInstance().EventTrigger("UpdateMap");
         }
+
+   
       
         
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if(currentSceneIndex == 0 && isLoadAutoStart)
+       
+        if(currentSceneIndex == 1 && isLoadAutoStart)
         {
             StartCoroutine(WaitForTime());
+
+        }else if(Info.Instance.isGameSaved() && currentSceneIndex == 0){
+
+            LoadNextScene();
+        
         }
     }
 
@@ -31,12 +39,14 @@ public class Transition : MonoBehaviour
     {
         
         yield return new WaitForSeconds(timeToWait);
+
         if(Info.Instance.isGameSaved())
         {
             StringSceneToLoad();
         }else{
             LoadNextScene();
         }
+      
     }
 
     public void TutorialBtn()
@@ -72,6 +82,11 @@ public class Transition : MonoBehaviour
     public float getTimeToWait()
     {
         return timeToWait;
+    }
+
+    public void PrivacyPolicy()
+    {
+        Application.OpenURL("https://kaizen081.itch.io/learning-is-fun");
     }
 
 }

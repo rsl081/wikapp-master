@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Instruction 1
   m_EditorClassIdentifier: 
   tutsText: Sa larong ito, kailangan kolektahin ang mga kendi at bituin upang mabuksan
-    ang mga susunod pang baitang ang impormasyong gaya ng pangalang, edad, kaarawan,
-    at kasarian ng manlalaro ay hihingin upang maisama sa laro.
+    ang mga susunod pang baitang ang impormasyong gaya ng pangalang, edad, at kaarawan
+    ng manlalaro ay hihingin upang maisama sa laro.
