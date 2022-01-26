@@ -5,7 +5,7 @@ using UnityEngine.Advertisements;
 
 public class AdManager : MonoBehaviour, IUnityAdsListener
 {
-    [SerializeField] private bool testMode = true;
+    [SerializeField] private bool testMode = false;
     public static AdManager Instance;
 
     private GameManager gameManager;

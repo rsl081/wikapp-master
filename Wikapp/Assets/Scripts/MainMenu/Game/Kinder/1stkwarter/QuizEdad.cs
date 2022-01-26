@@ -92,7 +92,7 @@ public class QuizEdad : MonoBehaviour
             monthsToChooseFrom.Add(monthPlayer);
 
         }else{
-            monthsToChooseFrom.Remove("March");
+            monthsToChooseFrom.Remove("Marso");
 
 
             monthsToChooseFrom.Add(monthPlayer);
