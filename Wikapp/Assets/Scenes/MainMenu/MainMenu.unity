@@ -121,6 +121,90 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &2744432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2737823691152109704, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 39a1c8eba60aecf4dbf322ef9f1400da, type: 3}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e4da04604683047967431ad91fc860, type: 3}
 --- !u!1 &8477869
 GameObject:
   m_ObjectHideFlags: 0
@@ -7464,7 +7548,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: HoToPlayToHome
+          m_StringArgument: HowToPlayToHome
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &474858819
@@ -35885,7 +35969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07774835, y: 0.128}
   m_AnchorMax: {x: 0.929, y: 0.89116246}
-  m_AnchoredPosition: {x: 2.5, y: 0.30000305}
+  m_AnchoredPosition: {x: 2.5, y: 0.2999878}
   m_SizeDelta: {x: 1.3722534, y: 3.3104553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1990213276

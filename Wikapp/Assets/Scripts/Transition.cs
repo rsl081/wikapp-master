@@ -45,6 +45,7 @@ public class Transition : MonoBehaviour
             StringSceneToLoad();
         }else{
             LoadNextScene();
+            
         }
       
     }
@@ -53,8 +54,10 @@ public class Transition : MonoBehaviour
     {
         if(Info.Instance.isGameSaved())
         {
+            FindObjectOfType<VoiceManager>().StopVoice();
             StringSceneToLoad();
         }else{
+            FindObjectOfType<VoiceManager>().StopVoice();
             LoadNextScene();
         }
     }

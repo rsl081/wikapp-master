@@ -152,10 +152,12 @@ public class QuizEdad : MonoBehaviour
 
             Instantiate(btnParticleEffect, button.transform.position, Quaternion.identity);
             scoreKeeper.IncrementCorrectAnswer();
+            FindObjectOfType<VoiceManager>().StopVoice();
 
         }else{
+            FindObjectOfType<VoiceManager>().StopVoice();
 
-          source.PlayOneShot(wrongAnsSound, 0.7f);
+            source.PlayOneShot(wrongAnsSound, 0.7f);
             Image warningBtn = answerButton[index].GetComponent<Image>();
             warningBtn.color = new Color32(244,73,34,255);
 
@@ -178,11 +180,14 @@ public class QuizEdad : MonoBehaviour
 
     IEnumerator ShowCorrectAnswer()
     {
-
         yield return new WaitForSeconds (1.5f);
         if(progressBar.value == progressBar.maxValue){
             isComplete = true;
             ShowCompletion();
+        }else{
+
+           FindObjectOfType<VoiceManager>().NextVoice();
+            
         }
 
         for(int i = 0; i < answerButton.Length; i++)
@@ -202,6 +207,7 @@ public class QuizEdad : MonoBehaviour
     void GetNextQuestion()
     {
         if(questions.Count > 0){
+            
             SetButtonState(true);
             //SetDefaultButtonSprite();
             //GetRandomQuestion();
@@ -219,11 +225,12 @@ public class QuizEdad : MonoBehaviour
         if(index < questions.Count-1){
             index++;
         }else{
+            
             return;
         }
         if(questions.Count > 0){
             //int index = Random.Range(0, questions.Count);
-
+            
             if(index == 0)
             {
                 currentQuestion = questions[index];
