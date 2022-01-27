@@ -892,10 +892,10 @@ RectTransform:
   m_Father: {fileID: 6913167848898245221}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -272}
-  m_SizeDelta: {x: 0, y: 95.121}
+  m_AnchorMin: {x: 0, y: 0.8247917}
+  m_AnchorMax: {x: 1, y: 0.89158344}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -0.000011444092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741138470
 MonoBehaviour:
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ito ba ang tamang pagbati?
+  m_text: "Ito ba ang \ntamang pagbati?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -944,8 +944,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.81
-  m_fontSizeBase: 71.81
+  m_fontSize: 79
+  m_fontSizeBase: 79
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -994,6 +994,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741138468}
   m_CullTransparentMesh: 0
+--- !u!1001 &2017436721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2737823691152109704, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: isAutoPlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d01dbbf19a6cfd42835bc914e8e5d52, type: 3}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e4da04604683047967431ad91fc860, type: 3}
 --- !u!1001 &2027919529
 PrefabInstance:
   m_ObjectHideFlags: 0

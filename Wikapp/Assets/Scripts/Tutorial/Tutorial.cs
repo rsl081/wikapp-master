@@ -18,32 +18,16 @@ public class Tutorial : MonoBehaviour
     Coroutine lastRoutine = null;
 
     Transition transition;
-
-    private void Awake() {
-
-        //Info.Instance.deletePlayerAndProgress();
-      
-
-    }
-
+    VoiceManager voiceManager;
     void Start () {
+
         Init();
 	}
 
     void Init()
     {
-        // transition = FindObjectOfType<Transition>();
-
-        // if(Info.Instance.isGameSaved())
-        // {
-        //     transition.StringSceneToLoad();
-        //     transition.LoadNextScene();
-
-        // }else{
-
-        // }
-
-        
+        voiceManager = FindObjectOfType<VoiceManager>();
+        //voiceManager.PlayVoice();
         dotBtn[0].interactable = false;
         for(int i = 0; i < dotBtn.Length; i++)
         {
@@ -58,6 +42,7 @@ public class Tutorial : MonoBehaviour
 	public void TaskOnClick(int btn)
     {
         StopCoroutine(lastRoutine);
+        voiceManager.StopVoice();
         int lastIndexOfBtn = dotBtn.Length-1;
         int lengthOfBtn = dotBtn.Length;
         int lengthOfScriptable = textScriptable.Length;
@@ -69,9 +54,14 @@ public class Tutorial : MonoBehaviour
                         dotBtn[i].interactable = false;
                         dotBtn[i].transform.DOPunchPosition(transform.localPosition + 
                                                             new Vector3(0f,-5f,0), 0.5f).Play();
+                        
+                        voiceManager.PlayVoiceTutorial(i);
+
                         ShowTutorialText(i);
+    
                     }else{
                         dotBtn[i].interactable = true;
+            
                     }
 
                     if(btn == lastIndexOfBtn)

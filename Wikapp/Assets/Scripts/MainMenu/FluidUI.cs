@@ -35,6 +35,7 @@ public class FluidUI : MonoBehaviour
             case "HowToPlay":
                 MoveUI(mainPanel, new Vector2(-1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(howToPlay, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
+                FindObjectOfType<VoiceManager>().PlayVoice();
                 break;
 
             case "Settings":
@@ -49,9 +50,10 @@ public class FluidUI : MonoBehaviour
                 MoveUI(grade1, new Vector2(1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(mainPanel, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
                 break;
-            case "HoToPlayToHome":
+            case "HowToPlayToHome":
                 MoveUI(howToPlay, new Vector2(1128, 0), 0.25f, 0f, Ease.OutFlash);
                 MoveUI(mainPanel, new Vector2(0, 0), 0.25f, 0f, Ease.OutFlash);
+                FindObjectOfType<VoiceManager>().StopVoice();
                 break;
 
 
