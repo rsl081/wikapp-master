@@ -269,6 +269,120 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &438823792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2737823691152109704, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720923365438930689, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720923365438930689, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: Priority
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: isAutoPlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 956ffd6dcd004504ba32073fe9ccabd0, type: 3}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 86c4f0a5875f47540aa2b5e2e53302cf, type: 3}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: c982f93d95a3fbf41a6806691bb9cdae, type: 3}
+    - target: {fileID: 5629483526888986229, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: voiceClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ae80a24d03ec2246813484b3de9b00f, type: 3}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790762723935768392, guid: 25e4da04604683047967431ad91fc860,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e4da04604683047967431ad91fc860, type: 3}
 --- !u!1 &535563479
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Piliin kung anong panghalip ito?
+  m_text: "Piliin kung \nanong panghalip ito?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fbff34d4566c8c408b1e80c33c39989, type: 2}
   m_sharedMaterial: {fileID: 4248013934960050225, guid: 6fbff34d4566c8c408b1e80c33c39989,
@@ -749,8 +863,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 69.92
-  m_fontSizeBase: 69.92
+  m_fontSize: 78.83
+  m_fontSizeBase: 78.83
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2654,8 +2768,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 151.6
-  m_fontSizeBase: 151.6
+  m_fontSize: 130.6
+  m_fontSizeBase: 130.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

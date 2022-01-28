@@ -68,8 +68,11 @@ public class QuizQuestionTextWithImage : MonoBehaviour
 
             Instantiate(btnParticleEffect, button.transform.position, Quaternion.identity);
             scoreKeeper.IncrementCorrectAnswer();
+            FindObjectOfType<VoiceManager>().StopVoice();
 
         }else{
+            
+            FindObjectOfType<VoiceManager>().StopVoice();
             source.PlayOneShot(wrongAnsSound, 0.7f);
             Image warningBtn = answerImg[index].GetComponent<Image>();
             warningBtn.color = new Color32(244,73,34,255);
@@ -103,6 +106,8 @@ public class QuizQuestionTextWithImage : MonoBehaviour
         if(progressBar.value == progressBar.maxValue){
             isComplete = true;
             ShowCompletion();
+        }else{
+            FindObjectOfType<VoiceManager>().NextVoice();
         }
 
         for(int i = 0; i < answerImg.Length; i++)
