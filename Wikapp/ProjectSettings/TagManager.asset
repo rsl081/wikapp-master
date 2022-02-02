@@ -8,6 +8,7 @@ TagManager:
   - Music
   - PanelNumber
   - Coloring
+  - UnlockGrade1
   layers:
   - Default
   - TransparentFX

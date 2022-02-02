@@ -18,6 +18,7 @@ public class Info : Singleton<Info>
     public void setPlayer(string player)
     {
         PlayerPrefs.SetString(Constants.Instance.PLAYER_KEY, player);
+        PlayerPrefs.SetInt("isOpenOnce",1);
         PlayerPrefs.Save();
     }
 
@@ -51,4 +52,6 @@ public class Info : Singleton<Info>
         return PlayerPrefs.HasKey(Constants.Instance.PLAYER_KEY);
         
     }
+
+
 }

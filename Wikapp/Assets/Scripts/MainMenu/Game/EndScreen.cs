@@ -16,7 +16,7 @@ public class EndScreen : MonoBehaviour
     Transition transition;
     AudioSource source;
     GameObject panelNumber;
-
+    GameObject unlockGrade1;
     int indexStar;
 
     // Start is called before the first frame update
@@ -26,19 +26,41 @@ public class EndScreen : MonoBehaviour
         transition = FindObjectOfType<Transition>();
 
         panelNumber = GameObject.FindGameObjectWithTag("PanelNumber");        
+        unlockGrade1 = GameObject.FindGameObjectWithTag("UnlockGrade1");
+        unlockGrade1.SetActive(false);
     }
-    
 
     public void ShowFinalScore()
     {
+
+     
 		panelNumber.transform.DOPunchScale(Vector3.one * 0.1f, 0.7f, 5, 0.6f).SetEase(Ease.OutCirc);                                                  
         finalScoreText.text = "Nakakuha ka\nng "
             + scoreKeeper.CalculateScore() + "%";
+
+
+    }
+
+    private void CountCandy(ICandyScore icandy)
+    {
+        //Debug.Log(icandy.Levels());
+        EventCenter.GetInstance().EventTrigger("PressStarButton");
+        EventCenter.GetInstance().EventTrigger("UpdateMap");
+
+        if((icandy.Levels() >= 24 && icandy.Levels() <= 27) && PlayerPrefs.GetInt("isOpenOnce") == 1)
+        {
+
+            unlockGrade1.SetActive(true);
+            PlayerPrefs.SetInt("isOpenOnce",0);
+            PlayerPrefs.Save();
+
+        }
+
     }
 
     public void ShowStarGUI()
     {
-        
+
         if(scoreKeeper.CalculateScore() >= 90){ 
 
             ShowCalculatedStar(3);
@@ -61,7 +83,8 @@ public class EndScreen : MonoBehaviour
             ShowCalculatedStar(0);
             StarFrameGUI();
         }
-
+      
+        CountCandy(new UIManager());
 
         //ShowNextBtn();
     }
@@ -77,19 +100,6 @@ public class EndScreen : MonoBehaviour
 
     }
 
-    // private void ShowNextBtn()
-    // {
-        // int previousLvIndex = levelIndex - 1;// PlayerPrefs.GetInt("Lv" + gameObject.name) - 1;
-        // Debug.Log(PlayerPrefs.GetInt("Lv" + levelIndex));
-        // if(PlayerPrefs.GetInt("Lv" + levelIndex) > 0)//At least get one stars in previous level
-        // {
-        //     //isUnlocked = true;//can unlock the next level
-        //     //! Note Button would appear here
-        //     lockNextImage.gameObject.SetActive(true);
-        // }else{
-        //     lockNextImage.gameObject.SetActive(false);
-        // }
-    // }
 
     private void StarFrameGUI()
     {
@@ -118,6 +128,5 @@ public class EndScreen : MonoBehaviour
 
         UIManager.instance.BackToMainMenu();
     }
-
 
 }
