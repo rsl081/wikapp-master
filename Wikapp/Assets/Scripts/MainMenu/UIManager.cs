@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
-public class UIManager : MonoBehaviour
+public class UIManager : MonoBehaviour, ICandyScore
 {
     public static UIManager instance;
     public GameObject mapSelectionPanel;
@@ -90,12 +90,11 @@ public class UIManager : MonoBehaviour
      
     }
 
-    //Update OUR Candies UI on the top left corner
     private void UpdateNameUI()
     {
         candies = Levels();
 
-        candyText.text = $"Kamusta,\n{Info.Instance.getPlayer()._name}";
+        candyText.text = $"Kumusta,\n{Info.Instance.getPlayer()._name}";
     }
 
     
@@ -180,7 +179,7 @@ public class UIManager : MonoBehaviour
         {
             mapSelections[_mapIndex].transform.DOShakePosition(3,3); //Shake if the card is lock
             audioSource.PlayOneShot(impactError, 0.7f);
-            //Debug.Log("You cannot open this scene now. Please work hard to collect more candies");
+            
         }
     }
 
