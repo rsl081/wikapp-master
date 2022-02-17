@@ -18,10 +18,6 @@ public class Transition : MonoBehaviour
             EventCenter.GetInstance().EventTrigger("UpdateMap");
         }
 
-   
-      
-        
-
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
        
         if(currentSceneIndex == 1 && isLoadAutoStart)
@@ -60,7 +56,18 @@ public class Transition : MonoBehaviour
             FindObjectOfType<VoiceManager>().StopVoice();
             LoadNextScene();
         }
+        EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
     }
+    public void CreditsBtn()
+    {
+        if(Info.Instance.isGameSaved())
+        {
+            StringSceneToLoad();
+        }else{
+            LoadNextScene();
+        }
+    }
+
     public void SubmitInfo()
     {
         if(Info.Instance.isGameSaved())
@@ -70,6 +77,7 @@ public class Transition : MonoBehaviour
         else{
             LoadNextScene();
         }
+        EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
     }
 
     public void LoadNextScene()

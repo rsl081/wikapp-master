@@ -73,8 +73,9 @@ public class UIManager : MonoBehaviour, ICandyScore
         UpdateLockedStarUI();
         UpdateUnLockedStarUI();
 
+
         EventCenter.GetInstance().EventTrigger("UpdateMap");
-        EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
+        //EventCenter.GetInstance().EventTrigger("DestroyMyAudioManager");
         //EventCenter.GetInstance().EventTrigger("DestroyGameMusic");
 
         EventCenter.GetInstance().AddEventListener("PressStarButton", UpdateNameUI);
